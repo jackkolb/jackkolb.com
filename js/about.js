@@ -39,11 +39,11 @@ function loadAbout() {
 
 		var work_title = document.createElement("div");
 			work_title.className = "work-about";
-			work_title.innerHTML = "Current Position: Mechanical Lead, <span style='color:#3366ff'>UCR Robosub<span><br><br>";	  			
+			work_title.innerHTML = "Current Position: Mechanical Lead, <span style='color:#4477ff'>UCR Robosub<span><br><br>";	  			
 
 		var org_title = document.createElement("div");
 		    org_title.className = "org-title";
-		    org_title.innerHTML = "My interests are in <span style='color:#dd0000'>robotics</span>, <span style='color:#ff33cc'>software engineering</span>, <span style='color:#5cd65c'>AI</span>, and <span style='color:#3366ff'>entrepreneurship</span>. I am actively involved in:<br><br>"
+		    org_title.innerHTML = "My interests are in <span style='color:#dd0000'>robotics</span>, <span style='color:#ff33cc'>software engineering</span>, <span style='color:#5cd65c'>AI</span>, and <span style='color:#4477ff'>entrepreneurship</span>. I am actively involved in:<br><br>"
 
 		var orgs = generateOrgs();
 
