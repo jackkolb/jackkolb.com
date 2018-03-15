@@ -46,7 +46,7 @@
 			"name": "GoodMorning",
 			"github": "https://github.com/jackkolb/goodmorning",
 			"tools": "Python, Tkinter, Web-Based APIs, Raspberry Pi",
-			"description": "A dynamic physical display of weather and equity information",
+			"description": "A dynamic display of weather and equity information",
 			"page": "project/goodmorning.htm"
 		},
 
