@@ -22,17 +22,17 @@
   }
 
   .project-entry-title {
-  	font-size: 18px;
+  	font-size: 14pt;
 	  color: white;
   }
 
   .project-entry-tools {
-  	font-size: 13px;
+  	font-size: 10pt;
 	  color: white;
   }
 
   .project-entry-desc {
-  	font-size: 14px;
+  	font-size: 10pt;
 	  color: #5cd65c;
   }
 
