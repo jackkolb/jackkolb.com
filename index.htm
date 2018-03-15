@@ -1,147 +1,416 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+
+
+<html lang="en">
 <head>
-<style>
-
-body {
-    margin:0;
-    background-color: black;
-}
-
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-li {
-    float: left;
-}
-
-ri {
-    float: right;
-}
-
-ri a {
-    display: block;
-    color: lightgrey;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: sans-serif
-}
-
-li a {
-    display: block;
-    color: lightgrey;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: sans-serif
-}
-
-li a:hover:not(.active) {
-    background-color: black;
-}
-
-.active {
-    background-color: black;
-}
-
-h1 {
-    color: white;
-    font-family: sans-serif;
-    text-align: center;
-}
-
-h3 {
-    color: white;
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: inherit;
-    vertical-align: middle;
-}
-
-p {
-    color: white;
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: inherit;
-    vertical-align: middle;
-}
-
-
-
-.colorbox {
-	background:#634;
-	width:600px;
-	/* for IE */
-	filter:alpha(opacity=80);
- 	/* CSS3 standard */
- 	opacity:0.8;
-	margin: 0 auto;
-        padding: 1px 15px;
-}
-
-</style>
+  <meta charset="utf-8">
+  <title>Jack Kolb</title>
+  <meta name="description" content="My personal website!">
+  <meta name="author" content="Jack Kolb">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/projects.css">
+<link rel="stylesheet" type="text/css" href="css/about.css">
+
+
+<style>
+  body {
+  	background-color: black;
+  	font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+  }
+
+  p {
+  	color: green;
+  }
+
+  h1 {
+  	color: white;
+  }
+
+  h2 {
+  	color: white;
+  }
+
+  .projects-title {
+  	text-align: center;
+    margin-left: 0;
+    margin-right: auto;
+
+    color: white;
+    font-size: 20px;
+
+    display: inline-block;
+  }
+
+  .about-me-title {
+  	text-align: center;
+    margin-left: 0;
+    margin-right: auto;
+
+    color: white;
+    font-size: 20px;
+
+    display: inline-block;
+  }
+
+  .resume-title {
+  	text-align: center;
+    margin-left: 0;
+    margin-right: auto;
+
+    display: inline-block;
+
+    color: white;
+    font-size: 20px;
+  }
+
+
+  a.learn-more {
+  	color: lightblue;
+  	text-decoration: none;
+  	float: right;
+  	font-size: 14px;
+  }
+
+  button {
+  	background-color:black;
+  	border:none;
+  	padding: 5px;
+  	font-size: 20px;
+  	color: white;
+  }
+
+</style>
+
 <body>
+	<div class="name-title"><h1>Jack Kolb</h1></div>
+	<div class="welcome-title">Welcome to this portfolio of my works</div>
+	<br>
+	<div class="icon-row">
+		<a href="https://github.com/jackkolb" target="_blank" style="text-decoration: none">
+			<img src="assets/github_white.png" height="100%">
+		</a>
+		<a href="https://www.linkedin.com/in/jack-kolb-786134b8/" target="_blank" style="text-decoration: none">
+			<img src="assets/linkedin_white.png" height="100%">
+		</a>
+		<a href="https://facebook.com/jackhkolb" target="_blank" style="text-decoration: none">
+			<img src="assets/facebook_white.png" height="100%">
+		</a>
+	</div>
+  	<br>
+  	<br>
+  	<div class="buttons">
+  	<div class="about-me-title">
+  		<button id="about-button" onclick="handleAbout()">
+  			<b>About Me</b>
+  		</button>
+  	</div>
+  	<div class="projects-title">
+  		<button id="projects-button" onclick="handleProjects()">
+  			<b>Projects</b>
+  		</button>
+  	</div>
+  	<div class="resume-title">
+  		<button id="resume-button" onclick="handleResume()">
+  			<b>Resume</b>
+  		</button>
+  	</div>
+	</div>
+	<br>
+	<div id="flag"></div>
+
+  	<script src="projects.json"></script>
+
+  	<script type="text/javascript">
+		var projects_active = false;
+		var about_active = false;
+
+		handleAbout();
+
+		function handleAbout() {
+			if (about_active) {
+				removeAbout();
+				loadAbout();
+				showBar("about-button");
+			}
+			else if (projects_active) {
+				removeProjects();
+				hideBar("projects-button");
+				projects_active = false;
+				loadAbout();
+				showBar("about-button");
+				about_active = true;
+			}
+			else {
+				loadAbout();
+				showBar("about-button");
+				about_active = true;
+			}
+		}
+
+		function showBar(name) {
+			document.getElementById(name).setAttribute("style", "border-bottom: 1px solid white");
+		}
+
+		function hideBar(name) {
+			document.getElementById(name).setAttribute("style", "");
+		}
+
+		function handleResume() {
+			var resume_win = window.open("assets/resume.pdf", "_blank");
+			resume_win.focus();
+		}
+
+		function handleProjects() {
+			if (projects_active) {
+				removeProjects();
+				loadProjects();
+				showBar("projects-button");
+			}
+			else if (about_active) {
+				removeAbout();
+				hideBar("about-button");
+				about_active = false;
+				loadProjects();
+				showBar("projects-button");
+				projects_active = true;
+			}
+			else {
+				loadProjects();
+				showBar("projects-button");
+				projects_active = true;
+			}
+		}
 
 
-<div id="jack"> 
-<div style="padding: 20px;
-            margin-top: 30px;
-            background-color: black;
-            height: 500px; 
-            text-align: center;
-            font-family: sans-serif">
-
-<h1>I am Jack Kolb</h1>
-<h3>Welcome to this portfolio of my works</h3>
-<br>
-<a href="projects.htm" style="text-decoration:none">
-<div class="colorbox"; style="font-weight:bold; background:#430000">
-    <p>Engineer</p>
-</div></a>
-<br>
-<a href="projects/agi.htm" style="text-decoration:none">
-<div class="colorbox"; style="font-weight:bold; background:#300121">
-    <p>Entrepreneur</p>
-</div></a>
-<br>
-<a href="education.htm" style="text-decoration:none">
-<div class="colorbox"; style="font-weight:bold; background:#023000">
-    <p>Student</p>
-</div></a>
-<br>
-<a href="hackathons.htm" style="text-decoration:none">
-<div class="colorbox"; style="font-weight:bold; background:#373200">
-    <p>Hacker</p>
-</div></a>
-<br>
-<h3>Colored tabs link to further descriptions when appropiate</h3>
-<br>
-</div>
+		function removeAbout() {
+			var element = document.getElementById("about");
+			element.parentNode.removeChild(element);
+		}
 
 
+		function removeProjects() {
+			var element = document.getElementById("projects");
+			element.parentNode.removeChild(element);
+		}
+
+		function loadAbout() {
+
+			var about = document.createElement("div");
+	  			about.id = "about";
+	  			about.className = "about-box"
+	  		
+	  		var school = document.createElement("div");
+	  			school.className = "school-about";
+	  			school.innerHTML = "University of California, Riverside";
+
+	  		var major = document.createElement("div");
+	  			major.className = "major-about";
+	  			major.innerHTML = "Mechanical Engineering (2020)<br><br>";
+
+	  		var work_title = document.createElement("div");
+	  			work_title.className = "work-about";
+	  			work_title.innerHTML = "Current Position: Mechanical Lead, UCR Robosub<br><br>";	  			
+
+	  		var org_title = document.createElement("div");
+  			    org_title.className = "org-title";
+  			    org_title.innerHTML = "I am actively involved in:<br><br>"
+
+	  		var asme_org = document.createElement("a");
+  			    asme_org.className = "org-about";
+  			    asme_org.setAttribute("href", "https://ucrasme.wixsite.com/ucr-asme")
+  			    asme_org.setAttribute("target", "_blank");
+  			    asme_org.innerHTML = "ASME @ UCR 🔗<br>";
+
+	  		var acm_org = document.createElement("a");
+  			    acm_org.className = "org-about";
+  			    acm_org.setAttribute("href", "https://acmucr.org")
+  			    acm_org.setAttribute("target", "_blank");
+  			    acm_org.innerHTML = "ACM @ UCR 🔗<br>";
+
+	  		var ieee_org = document.createElement("a");
+  			    ieee_org.className = "org-about";
+  			    ieee_org.setAttribute("href", "http://ieee.ee.ucr.edu/")
+  			    ieee_org.setAttribute("target", "_blank");
+  			    ieee_org.innerHTML = "IEEE @ UCR 🔗<br>"
+
+	  		var intro = document.createElement("div");
+  			    intro.className = "intro-about";
+  			    intro.innerHTML = "<br>When not in class, I can be found coding, Robosubing, playing piano, attending student org meetings/events, and learning languages... probably coding. Check out the projects section!<br><br>"
 
 
-<ul>
-  <li><a class="active" href="#">Home</a></li>
-  <li><a href="resume.htm">Resume</a></li>
-  <li><a href="education.htm">Education</a></li>
-  <li><a href="involvement.htm">Involvement</a></li>
-  <li><a href="projects.htm">Projects</a></li>
-  <li><a href="contact.htm">Contact</a></li>
-  <ri><a>Jack Kolb</a></ri>
-</ul>
+  			var courses = document.createElement("div");
+
+  			var me_courses = generateMECourses();
+  			//courses.append(me_courses);
+
+  			var cs_courses = generateCSCourses();
+  			//courses.append(cs_courses);
+
+	  		about.append(school);
+	  		about.append(major);
+
+	  		about.append(work_title);
+
+	  		about.append(org_title);
+	  		about.append(asme_org);
+	  		about.append(acm_org);
+	  		about.append(ieee_org);
+
+	  		about.append(intro);
+
+	  		about.append(courses);
+	  		document.body.insertBefore(about, document.getElementById("flag"));
+		}
+
+		function loadProjects() {
+	  		fetch('projects.json')
+	  		.then(response => response.text())
+	  		.then(function(text) {
+	  			var mydata = JSON.parse(text);
+
+	  			var projects = document.createElement("div");
+	  			projects.id = "projects";
+
+	  			var timer = 50;
+
+	  			mydata["projects"].forEach(function(entry) {
+	  				timer += 50;
+
+	  				setTimeout(function() {
+						var project_name = entry.name;
+		  				var project_hackathon = entry.hackathon;
+		  				var project_github = entry.github;
+		  				var project_tools = entry.tools;
+		  				var project_description = entry.description;
+		  				var project_page = entry.page;
+
+		  				var newProject = generateProject(entry.name, entry.hackathon, entry.github, entry.tools, entry.description, entry.page);
+
+			  			projects.append(newProject);
+	  				}, timer);
+
+	  			});
+
+	  			document.body.insertBefore(projects, document.getElementById("flag"));
+
+	  		});
+	  	}
+
+	  	function generateMECourses() {
+	  		var courses = document.createElement("div");
+	  		fetch('me_courses.json')
+	  		.then(response => response.text())
+	  		.then(function(text) {
+	  			var mydata = JSON.parse(text);
+
+		  		var me_courses_title = document.createElement("div");
+	  			    me_courses_title.className = "me-courses-title";
+	  			    me_courses_title.innerHTML = "<br>Mechanical Engineering Courses:<br>";
+	  			courses.append(me_courses_title);
+
+	  			mydata["courses"].forEach(function(entry) {
+	  				var course = document.createElement("div");
+	  					course.className = "me-course";
+	  					course.innerHTML = entry.name + "<br>";
+	  				courses.append(course);
+	  			});
+	  		});
+	  		return courses;
+	  	}
+
+	  	function generateCSCourses() {
+	  		var courses = document.createElement("div");
+	  		fetch('cs_courses.json')
+	  		.then(response => response.text())
+	  		.then(function(text) {
+	  			var mydata = JSON.parse(text);
+
+		  		var cs_courses_title = document.createElement("div");
+	  			    cs_courses_title.className = "cs-courses-title";
+	  			    cs_courses_title.innerHTML = "<br>Computer Science Courses:<br>";
+	  			courses.append(cs_courses_title);
+
+	  			mydata["courses"].forEach(function(entry) {
+	  				var course = document.createElement("div");
+	  					course.className = "cs-course";
+	  					course.innerHTML = entry.name + "<br>";
+	  				courses.append(course);
+	  			});
+	  		});
+	  		return courses;
+	  	}
+  		
+  		function generateProject(project_name, project_hackathon, project_github, project_tools, project_description, project_page) {
+  			var newProject = document.createElement("div");
+
+  			var newProjectEntry = document.createElement("div");
+  			newProjectEntry.className = "project-entry";
+
+  			var newProjectEntryTitle = document.createElement("div");
+  			newProjectEntryTitle.className = "project-entry-title";
+  			newProjectEntryTitle.innerHTML = "<b>" + project_name + "</b>";
+
+  			var githubLink = document.createElement("a");
+  			githubLink.setAttribute("href", project_github);
+  			githubLink.setAttribute("target", "_blank");
+  			githubLink.innerHTML = "<span style='float:right'><img src='assets/github_white.png' height='25'></span>";
+
+  			var hackathonTag = document.createElement("div");
+  			hackathonTag.className = "project-entry-title";
+  			hackathonTag.setAttribute("style", "color:#CC0066");
+  			hackathonTag.innerHTML = "<span><b>[Hackathon]</b></span>";
+
+  			var newProjectEntryTools = document.createElement("div");
+  			newProjectEntryTools.className = "project-entry-tools";
+  			var tools_listing = "";
+  			if (project_hackathon == "true") {
+  				tools_listing += "<span style='color:#CC0066'>[Hackathon] </span>"
+  			}
+  			tools_listing += "<i>" + project_tools + "</i>";
+  			newProjectEntryTools.innerHTML = tools_listing;
+
+  			var preSpace = document.createElement("div");
+  			preSpace.className = "big-space";
+
+  			var newProjectEntryDescription = document.createElement("div");
+  			newProjectEntryDescription.className = "project-entry-desc";
+  			newProjectEntryDescription.innerHTML = project_description;
+
+  			var moreLink = document.createElement("a");
+  			moreLink.setAttribute("href", project_page);
+  			moreLink.setAttribute("target", "_blank");
+  			moreLink.setAttribute("class", "learn-more");
+  			moreLink.innerHTML = "<i>(learn more)</i>";
+
+  			var postSpace = document.createElement("div");
+  			postSpace.className = "big-space";
+
+  			var breakSpace = document.createElement("div");
+  			breakSpace.className = "break-space";
+
+
+  			newProject.append(newProjectEntry);
+	  			newProjectEntry.append(newProjectEntryTitle);
+	  				if (project_github) {
+		  				newProjectEntryTitle.append(githubLink);
+					}
+	  			newProjectEntry.append(newProjectEntryTools);
+	  			newProjectEntry.append(preSpace);
+	  			newProjectEntry.append(newProjectEntryDescription);
+	  				newProjectEntryDescription.append(moreLink);
+	  			newProjectEntry.append(postSpace);
+  			newProject.append(breakSpace);
+
+  			return newProject;
+  		}
+
+  		
+  	</script>
+
 
 </body>
 </html>
