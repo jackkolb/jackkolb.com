@@ -1,0 +1,40 @@
+{
+	"orgs":
+	[
+		{
+			"title": "ASME @ UCR",
+			"name": "American Society of Mechanical Engineers",
+			"link": "https://ucrasme.wixsite.com/ucr-asme"
+		},
+
+		{
+			"title": "ACM @ UCR",
+			"name": "Association of Computing Machinery",
+			"link": "https://acmucr.org"
+		},
+
+		{
+			"title": "IEEE @ UCR",
+			"name": "Institute of Electronics and Electrical Engineers",
+			"link": "http://ieee.ee.ucr.edu"
+		},
+
+		{
+			"title": "NRHH",
+			"name": "National Residence Hall Honorary",
+			"link": "http://nrhh.ucr.edu"
+		},
+
+		{
+			"title": "Honors",
+			"name": "University Honors at UCR",
+			"link": "http://honors.ucr.edu"
+		},
+
+		{
+			"title": "CCE @ UCR",
+			"name": "Cross Campus Entrepreneurs",
+			"link": "http://cce.ucr.edu"
+		}
+	]
+}
