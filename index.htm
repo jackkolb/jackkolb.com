@@ -217,7 +217,7 @@
 
 	  		var org_title = document.createElement("div");
   			    org_title.className = "org-title";
-  			    org_title.innerHTML = "I am actively involved in:<br><br>"
+  			    org_title.innerHTML = "My interests are in robotics, software engineering, AI, and entrepreneurship. I am actively involved in:<br><br>"
 
 	  		var asme_org = document.createElement("a");
   			    asme_org.className = "org-about";
@@ -237,9 +237,15 @@
   			    ieee_org.setAttribute("target", "_blank");
   			    ieee_org.innerHTML = "IEEE @ UCR 🔗<br>"
 
+  			var nrhh_org = document.createElement("a");
+  			    nrhh_org.className = "org-about";
+  			    nrhh_org.setAttribute("href", "http://nrhh.ucr.edu/")
+  			    nrhh_org.setAttribute("target", "_blank");
+  			    nrhh_org.innerHTML = "NRHH 🔗<br>"
+
 	  		var intro = document.createElement("div");
   			    intro.className = "intro-about";
-  			    intro.innerHTML = "<br>When not in class, I can be found coding, Robosubing, playing piano, attending student org meetings/events, and learning languages... probably coding. Check out the projects section!<br><br>"
+  			    intro.innerHTML = "<br>When not in class, I can be found coding, Robosubing, playing piano, attending student org meetings/events, sitting in on CS lectures, and learning new languages... probably coding. Check out the projects section!<br><br>"
 
 
   			var courses = document.createElement("div");
@@ -259,6 +265,7 @@
 	  		about.append(asme_org);
 	  		about.append(acm_org);
 	  		about.append(ieee_org);
+	  		about.append(nrhh_org);
 
 	  		about.append(intro);
 

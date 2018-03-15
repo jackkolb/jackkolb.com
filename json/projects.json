@@ -1,0 +1,86 @@
+{
+	"projects":
+	[
+		{
+			"name": "Littlebox",
+			"github": "https://github.com/jackkolb/littlebox",
+			"tools": "C++, Boost",
+			"description": "A cross-platform, remote-accessed file server",
+			"page": "project/littlebox.htm"
+		},
+
+		{
+			"name": "ElectionCat",
+			"hackathon": "true",
+			"github": "https://github.com/jackkolb/electioncat",
+			"tools": "HTML, CSS, Python, Flask, Azure",
+			"description": "A simple, beautiful, election system for student organizations",
+			"page": "project/electioncat.htm"
+		},
+
+		{
+			"name": "Cryptos",
+			"tools": "Python",
+			"description": "A medium-frequency algorithmic equity/cryptocurrency trader",
+			"page": "project/cryptos.htm"
+		},
+
+		{
+			"name": "WiCon",
+			"github": "https://github.com/jackkolb/wicon",
+			"tools": "Python, GTK3",
+			"description": "A GUI WiFi manager for Linux desktops",
+			"page": "project/wicon.htm"
+		},
+
+		{
+			"name": "Froot",
+			"hackathon": "true",
+			"github": "https://github.com/jackkolb/froot",
+			"tools": "HTML/CSS, Javascript",
+			"description": "Creates recipes using discounted grocery items",
+			"page": "project/froot.htm"
+		},
+
+		{
+			"name": "GoodMorning",
+			"github": "https://github.com/jackkolb/goodmorning",
+			"tools": "Python, Tkinter, Web-Based APIs, Raspberry Pi",
+			"description": "A dynamic physical display of weather and equity information",
+			"page": "project/goodmorning.htm"
+		},
+
+		{
+			"name": "Mademoiselle Le'Bot",
+			"tools": "Python, LINE, Heroku, Google Drive APIs",
+			"description": "A LINE chatbot with a wide array of features",
+			"page": "project/linebot.htm"
+		},
+
+		{
+			"name": "Three Cups",
+			"hackathon": "true",
+			"github": "https://github.com/jackkolb/threecups",
+			"tools": "Python, OpenCV, Raspberry Pi",
+			"description": "A robot that observes and tracks three identical cups",
+			"page": "project/threecups.htm"
+		},
+
+		{
+			"name": "TranSec",
+			"hackathon": "true",
+			"github": "https://github.com/jackkolb/transec",
+			"tools": "C++, Windows Socket Libraries",
+			"description": "An end-to-end encrypted file transfer program",
+			"page": "project/transec.htm"
+		},
+
+		{
+			"name": "FoodText",
+			"tools": "Python, Google Drive APIs, Raspberry Pi",
+			"description": "Delivers UCR's daily dining menus via regular text messages",
+			"page": "project/foodtext.htm"
+		}
+
+	]
+}
