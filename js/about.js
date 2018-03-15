@@ -39,7 +39,7 @@ function loadAbout() {
 
 		var work_title = document.createElement("div");
 			work_title.className = "work-about";
-			work_title.innerHTML = "Current Position: Mechanical Lead, UCR Robosub<br><br>";	  			
+			work_title.innerHTML = "Current Position: Mechanical Lead, <span style='color:#3366ff'>UCR Robosub<span><br><br>";	  			
 
 		var org_title = document.createElement("div");
 		    org_title.className = "org-title";
@@ -49,7 +49,7 @@ function loadAbout() {
 
 		var intro = document.createElement("div");
 		    intro.className = "intro-about";
-		    intro.innerHTML = "<br>When not in class, I can be found coding, Robosubing, playing piano, attending student org meetings/events, sitting in on CS lectures, and learning new languages... probably coding. Check out the projects section!<br><br>"
+		    intro.innerHTML = "<br><br>When not in class, I can be found coding, Robosubing, playing piano, attending student org meetings and campus events, sitting in on CS lectures, and learning new languages... probably coding. Check out the projects section!<br><br>"
 
 
 		var courses = document.createElement("div");
