@@ -92,7 +92,7 @@ function generateOrgs() {
 				org.className = "org-about";
 				org.setAttribute("href", entry.link);
 				org.setAttribute("target", "_blank");
-				org.innerHTML = "[" + entry.title + "] - " + "<span style='color:grey'>" + entry.name + "</span><br>";
+				org.innerHTML = "[" + entry.title + "] - " + "<span style='color:grey; font-size:11pt; vertical-align:middle'>" + entry.name + "</span><br>";
 			orgs.append(org);
 		});
 	});
