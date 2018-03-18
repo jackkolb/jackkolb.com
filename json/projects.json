@@ -8,6 +8,7 @@
 			"time": "Early 2018",
 			"status": "In Progress",
 			"short": "A cross-platform, remote-accessed file server",
+			"images": ["img/littlebox_1.png"],
 			"long": "Littlebox is a TCP/IP file server (and client) written using the boost::asio library. It supports three functions: push (add a file to the server), pull (retrieve a file from the server), and delete (delete a file from the server), however other functions can be built using these three. The idea is to make the server as simple and secure as possible -- separate passwords for server and files, RSA to deliver symmetric keys, thorough documentation, and easy deployment."
 		},
 
@@ -39,6 +40,7 @@
 			"status": "Complete",
 			"tools": "Python, GTK3",
 			"short": "A GUI WiFi manager for Linux desktops",
+			"images": ["img/wicon_1.png", "img/wicon_2.png"],
 			"long": "WiCon comes from a personal need: a simple, straightforward, wifi connection tool for ArchLinux. It is essentially a GUI wrapper for iw list, wpa_supplicant, and dhcpcd, leaving the user with minimal work. The interface is clean and simple: the user selects the connection, presses 'Connect', and enters their login information. WiCon does its best to handle all the configuration setup."
 		},
 
@@ -50,6 +52,7 @@
 			"tools": "HTML/CSS, Javascript",
 			"status": "Complete",
 			"short": "Creates recipes using discounted grocery items",
+			"images": ["img/froot_1.png", "img/froot_2.png"],
 			"long": "Froot uses a database of discounted grocery items to find recipes using these items. It is intended for cooperation with local grocery stores (pulling from their internal databases) to help broke college students eat better, for less."
 		},
 
@@ -60,6 +63,7 @@
 			"status": "Complete",
 			"tools": "Python, Tkinter, Several Web-Based APIs, Raspberry Pi",
 			"short": "A dynamic display of weather and equity information",
+			"images": ["img/goodmorning_1.png", "img/goodmorning_2.png"],
 			"long": "Using a cheap 8-inch screen and a Raspberry Pi, I wrote a 'Good Morning' board that displays the date, time, weather, and stock/crypto information over a background that changes on the time of day and weather. It is currently hanging next to my bathroom mirror -- quite useful!"
 		},
 
@@ -69,6 +73,7 @@
 			"time": "Summer 2018",
 			"status": "Complete (actively maintained)",
 			"short": "A LINE chatbot with a wide array of features",
+			"images": ["img/linebot_1.png", "img/linebot_2.png"],
 			"long": "I made this bot to aid a gaming clan with various aspects of their internal management. The bot has a variety of useful features, including alarms, a timezone conversion system, auto-submission of Google Forms, Google Sheets lookups of item costs (using a 'Best Match' approach), player points, and other information, links to clan documents, generating pre-filled Google Forms, and various 'fun' commands. I am no longer actively involved with the game, but still maintain the bot."
 		},
 
@@ -92,6 +97,7 @@
 			"time": "Enginuity Hackathon, Spring 2017",
 			"tools": "C++, WinSock Library",
 			"short": "An end-to-end encrypted file transfer program",
+			"images": ["img/transec_1.png"],
 			"long": "TranSec was made to securely transfer files between computers assuming prying eyes (network administrators, NSA, etc) at all points between the outbound and inbound network cards. The code itself is highly inefficient, I wrote the symmetric key encryption algorithm myself (so it is likely not too secure), however it works, it taught me lots about networking, and I am proud of it as my first C++ project."
 		},
 
@@ -101,6 +107,7 @@
 			"status": "Complete",
 			"tools": "Python, Google Drive APIs, Raspberry Pi",
 			"short": "Delivers UCR's daily dining menus via regular text messages",
+			"images": ["img/foodtext_1.png"],
 			"long": "After looking up UCR's residential restaurant's menus on a daily basis, I decided to automate it. The service sends out the day's menus from the three UCR restaurants via SMS, scrapping the websites and presenting the information in an easy-to-read format. Phone number registration is done via a Google Form, and the server runs on a Raspberry Pi."
 		}
 
