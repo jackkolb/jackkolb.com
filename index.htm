@@ -1,7 +1,5 @@
 <!doctype html>
 
-
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -14,102 +12,27 @@
 <link rel="stylesheet" type="text/css" href="css/header.css">
 <link rel="stylesheet" type="text/css" href="css/projects.css">
 <link rel="stylesheet" type="text/css" href="css/about.css">
+<link rel="stylesheet" type="text/css" href="css/project_page.css">
 
-
-<style>
-  body {
-  	background-color: black;
-  	font-family: Consolas, monospace;
-  	font-size: 13pt;
-  }
-
-  p {
-  	color: green;
-  }
-
-  h1 {
-  	color: white;
-  }
-
-  h2 {
-  	color: white;
-  }
-
-  .tab-title {
-  	text-align: center;
-    margin-left: 0;
-    margin-right: auto;
-
-    display: inline-block;
-
-    color: white;
-  }
-
-  button {
-
-  	font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-
-  	background-color: black;
-  	border: none;
-  	padding: 5pt;
-  	font-size: 18pt;
-
-  	color: white;
-  }
-
-</style>
 
 <body>
-	<div class="name-title"><h1>Jack Kolb</h1></div>
-	<div class="welcome-title">Welcome to this portfolio of my works</div>
-	<br>
-	<div class="icon-row">
-		<a href="https://github.com/jackkolb" target="_blank" style="text-decoration: none">
-			<img src="assets/github_white.png" height="100%">
-		</a>
-		<a href="https://www.linkedin.com/in/jack-kolb-786134b8/" target="_blank" style="text-decoration: none">
-			<img src="assets/linkedin_white.png" height="100%">
-		</a>
-		<a href="https://facebook.com/jackhkolb" target="_blank" style="text-decoration: none">
-			<img src="assets/facebook_white.png" height="100%">
-		</a>
-	</div>
-  	<br>
-  	<br>
-  	<div class="buttons">
-  	<div class="tab-title">
-  		<button id="about-button" onclick="handleAbout()">
-  			<b>About Me</b>
-  		</button>
-  	</div>
-  	<div class="tab-title">
-  		<button id="projects-button" onclick="handleProjects()">
-  			<b>Projects</b>
-  		</button>
-  	</div>
-  	<div class="tab-title">
-  		<button id="resume-button" onclick="handleResume()">
-  			<b>Resume</b>
-  		</button>
-  	</div>
-	</div>
-	<br>
-	<div id="flag"></div>
+    <div id="preflag"></div>
+    <div id="title"></div>
+    <div id="content"></div>
 
-  	<script src="projects.json"></script>
-  	<script src="js/projects.js"></script>
-  	<script src="js/about.js"></script>
-  	<script src="js/resume.js"></script>
-  	<srcipt src="js/orgs.js"></script>
-  	<script src="js/utility.js"></script>
+  	<script src="js/index.js"></script>
+    <script src="js/project_page.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/resume.js"></script>
+    <srcipt src="js/orgs.js"></script>
+    <script src="js/utility.js"></script>
 
-  	<script type="text/javascript">
-		var projects_active = false;
-		var about_active = false;
-
-		handleAbout();
-
-
+    <script>
+      var about_active = false;
+      var projects_active = false;
+      var projectpage_active = false;
+      loadHome();
   	</script>
 </body>
 </html>

@@ -2,82 +2,80 @@
 
 
 function handleAbout() {
-	if (about_active) {
-		removeAbout();
-		loadAbout();
-		showBar("about-button");
-	}
-	else if (projects_active) {
-		removeProjects();
-		hideBar("projects-button");
-		projects_active = false;
-		loadAbout();
-		showBar("about-button");
-		about_active = true;
-	}
-	else {
-		loadAbout();
-		showBar("about-button");
-		about_active = true;
-	}
-}
+	removeProjects();
+	removeProjectPage();
+	removeAbout();
 
+	loadAbout();
+	showBar("about-button");
+	about_active = true;
+
+	return;
+}
 
 
 function loadAbout() {
 	var about = document.createElement("div");
-			about.id = "about";
-			about.className = "about-box"
-		
-		var school = document.createElement("div");
-			school.className = "school-about";
-			school.innerHTML = "University of California, Riverside";
+		about.id = "about";
+		about.className = "about-box"
+	
+	var school = document.createElement("div");
+		school.className = "school-about";
+		school.innerHTML = "University of California, Riverside";
 
-		var major = document.createElement("div");
-			major.className = "major-about";
-			major.innerHTML = "Mechanical Engineering (2020)<br><br>";
+	var major = document.createElement("div");
+		major.className = "major-about";
+		major.innerHTML = "Mechanical Engineering (2020)<br><br>";
 
-		var work_title = document.createElement("div");
-			work_title.className = "work-about";
-			work_title.innerHTML = "Current Position: Mechanical Lead, <span style='color:#4477ff'>UCR Robosub<span><br><br>";	  			
+	var work_title = document.createElement("div");
+		work_title.className = "work-about";
+		work_title.innerHTML = "Current Position: Mechanical Lead, <span style='color:#4477ff'>UCR Robosub<span><br><br>";	  			
 
-		var org_title = document.createElement("div");
-		    org_title.className = "org-title";
-		    org_title.innerHTML = "My interests are in <span style='color:#dd0000'>robotics</span>, <span style='color:#ff33cc'>software engineering</span>, <span style='color:#5cd65c'>AI</span>, and <span style='color:#4477ff'>entrepreneurship</span>. I am actively involved in:<br><br>"
+	var org_title = document.createElement("div");
+	    org_title.className = "org-title";
+	    org_title.innerHTML = "My interests are in <span style='color:#dd0000'>robotics</span>, <span style='color:#ff33cc'>software engineering</span>, <span style='color:#5cd65c'>AI</span>, and <span style='color:#4477ff'>entrepreneurship</span>. I am actively involved in:<br><br>"
 
-		var orgs = generateOrgs();
+	var orgs = generateOrgs();
 
-		var intro = document.createElement("div");
-		    intro.className = "intro-about";
-		    intro.innerHTML = "<br><br>When not in class, I can be found coding, Robosubing, playing piano, attending student org meetings and campus events, sitting in on CS lectures, and learning new languages... probably coding. Check out the projects section!<br><br>"
+	var intro = document.createElement("div");
+	    intro.className = "intro-about";
+	    intro.innerHTML = "<br><br>When not in class, I can be found coding, Robosubing, playing piano, attending student org meetings and campus events, sitting in on CS lectures, and learning new languages... probably coding. Check out the projects section!<br><br>"
 
 
-		var courses = document.createElement("div");
+	var courses = document.createElement("div");
 
-		var me_courses = generateMECourses();
-		//courses.append(me_courses);
+	var me_courses = generateMECourses();
+	//courses.append(me_courses);
+	var cs_courses = generateCSCourses();
+	//courses.append(cs_courses);
 
-		var cs_courses = generateCSCourses();
-		//courses.append(cs_courses);
+	about.append("<br>");
 
-		about.append(school);
-		about.append(major);
+	about.append(school);
+	about.append(major);
 
-		about.append(work_title);
+	about.append(work_title);
 
-		about.append(org_title);
-		about.append(orgs);
+	about.append(org_title);
+	about.append(orgs);
 
-		about.append(intro);
+	about.append(intro);
 
-		about.append(courses);
-		document.body.insertBefore(about, document.getElementById("flag"));
+	about.append(courses);
+
+	document.body.insertBefore(about, document.getElementById("content"));
+
+	return about;
 }
 
 
 function removeAbout() {
-	var element = document.getElementById("about");
-	element.parentNode.removeChild(element);
+	if (about_active) {
+		var element = document.getElementById("about");
+		element.parentNode.removeChild(element);
+		about_active = false;
+		hideBar("about-button");
+	}
 }
 
 

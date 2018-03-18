@@ -1,30 +1,38 @@
 {
-	"projects":
-	[
+
+	"Littlebox":
 		{
 			"name": "Littlebox",
 			"github": "https://github.com/jackkolb/littlebox",
 			"tools": "C++, Boost",
-			"description": "A cross-platform, remote-accessed file server",
-			"page": "project/littlebox.htm"
+			"year": "2018",
+			"status": "Incomplete",
+			"short": "A cross-platform, remote-accessed file server",
+			"description": "Littlebox is a TCP/IP file server (and client) written using the boost::asio library. It supports three functions: push (add a file to the server), pull (retrieve a file from the server), and delete (delete a file from the server), however other functions can be built using these three. The idea is to make the server as simple and secure as possible -- seperate passwords for server and files, RSA to deliver symmetric keys, thorough documentation, and easy implementation.",
+			"images": ["../img/threecups_1.png", "../img/threecups_2.png"]
 		},
 
+	"ElectionCat":
 		{
 			"name": "ElectionCat",
-			"hackathon": "true",
 			"github": "https://github.com/jackkolb/electioncat",
 			"tools": "HTML, CSS, Python, Flask, Azure",
-			"description": "A simple, beautiful, election system for student organizations",
-			"page": "project/electioncat.htm"
+			"year": "2018",
+			"status": "Complete",
+			"short": "A simple, beautiful, election system for student organizations",
+			"description": "Littlebox is a TCP/IP file server (and client) written using the boost::asio library. It supports three functions: push (add a file to the server), pull (retrieve a file from the server), and delete (delete a file from the server), however other functions can be built using these three. The idea is to make the server as simple and secure as possible -- seperate passwords for server and files, RSA to deliver symmetric keys, thorough documentation, and easy implementation.",
+			"images": ["../img/threecups_1.png", "../img/threecups_2.png"]
 		},
 
+	"Cryptos":
 		{
 			"name": "Cryptos",
 			"tools": "Python",
-			"description": "A medium-frequency algorithmic equity/cryptocurrency trader",
+			"short": "A medium-frequency algorithmic equity/cryptocurrency trader",
 			"page": "project/cryptos.htm"
 		},
 
+	"WiCon":
 		{
 			"name": "WiCon",
 			"github": "https://github.com/jackkolb/wicon",
@@ -33,6 +41,7 @@
 			"page": "project/wicon.htm"
 		},
 
+	"Froot":
 		{
 			"name": "Froot",
 			"hackathon": "true",
@@ -42,14 +51,16 @@
 			"page": "project/froot.htm"
 		},
 
+	"GoodMorning":
 		{
 			"name": "GoodMorning",
 			"github": "https://github.com/jackkolb/goodmorning",
 			"tools": "Python, Tkinter, Web-Based APIs, Raspberry Pi",
-			"description": "A dynamic physical display of weather and equity information",
+			"description": "A dynamic display of weather and equity information",
 			"page": "project/goodmorning.htm"
 		},
 
+	"LineBot":
 		{
 			"name": "Mademoiselle Le'Bot",
 			"tools": "Python, LINE, Heroku, Google Drive APIs",
@@ -57,8 +68,9 @@
 			"page": "project/linebot.htm"
 		},
 
+	"ThreeCups":
 		{
-			"name": "Three Cups",
+			"name": "ThreeCups",
 			"hackathon": "true",
 			"github": "https://github.com/jackkolb/threecups",
 			"tools": "Python, OpenCV, Raspberry Pi",
@@ -66,6 +78,7 @@
 			"page": "project/threecups.htm"
 		},
 
+	"TranSec":
 		{
 			"name": "TranSec",
 			"hackathon": "true",
@@ -75,6 +88,7 @@
 			"page": "project/transec.htm"
 		},
 
+	"FoodText":
 		{
 			"name": "FoodText",
 			"tools": "Python, Google Drive APIs, Raspberry Pi",
@@ -82,5 +96,4 @@
 			"page": "project/foodtext.htm"
 		}
 
-	]
 }

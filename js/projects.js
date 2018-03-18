@@ -2,60 +2,51 @@
 
 
 function handleProjects() {
-	if (projects_active) {
-		removeProjects();
-		loadProjects();
-		showBar("projects-button");
-	}
-	else if (about_active) {
-		removeAbout();
-		hideBar("about-button");
-		about_active = false;
-		loadProjects();
-		showBar("projects-button");
-		projects_active = true;
-	}
-	else {
-		loadProjects();
-		showBar("projects-button");
-		projects_active = true;
-	}
+	removeProjects();
+	removeProjectPage();
+	removeAbout();
+
+	loadProjects();
+	showBar("projects-button");
+	projects_active = true;
 }
 
 
 function loadProjects() {
-	fetch('projects.json')
+	fetch('json/projects.json')
 		.then(response => response.text())
 		.then(function(text) {
+
 			var mydata = JSON.parse(text);
 			var projects = document.createElement("div");
+			projects.append("<br>");
 			projects.id = "projects";
 			var timer = 50;
+
 			mydata["projects"].forEach(function(entry) {
 				timer += 50;
+
 				setTimeout(function() {
-					var project_name = entry.name;
-					var project_hackathon = entry.hackathon;
-					var project_github = entry.github;
-					var project_tools = entry.tools;
-					var project_description = entry.description;
-					var project_page = entry.page;
-					var newProject = generateProject(entry.name, entry.hackathon, entry.github, entry.tools, entry.description, entry.page);
+					var newProject = generateProject(entry.name, entry.hackathon, entry.github, entry.tools, entry.short);
   					projects.append(newProject);
 					}, timer);
 			});
-			document.body.insertBefore(projects, document.getElementById("flag"));
+			document.body.insertBefore(projects, document.getElementById("content"));
 		});
 }
 
 
 function removeProjects() {
-	var element = document.getElementById("projects");
-	element.parentNode.removeChild(element);
+	if (projects_active) {
+		var element = document.getElementById("projects");
+		element.parentNode.removeChild(element);
+		hideBar("projects-button");
+		projects_active = false;
+	}
 }
 
 
-function generateProject(project_name, project_hackathon, project_github, project_tools, project_description, project_page) {
+function generateProject(project_name, project_hackathon, project_github, project_tools, project_description) {
 	var newProject = document.createElement("div");
 
 	var newProjectEntry = document.createElement("div");
@@ -79,7 +70,7 @@ function generateProject(project_name, project_hackathon, project_github, projec
 	newProjectEntryTools.className = "project-entry-tools";
 	var tools_listing = "";
 	if (project_hackathon == "true") {
-		tools_listing += "<span style='color:#CC0066'>[Hackathon] </span>"
+		tools_listing += "<span style='color:#ff33cc'>[Hackathon] </span>"
 	}
 	tools_listing += "<i>" + project_tools + "</i>";
 	newProjectEntryTools.innerHTML = tools_listing;
@@ -91,9 +82,8 @@ function generateProject(project_name, project_hackathon, project_github, projec
 	newProjectEntryDescription.className = "project-entry-desc";
 	newProjectEntryDescription.innerHTML = project_description;
 
-	var moreLink = document.createElement("a");
-	moreLink.setAttribute("href", project_page);
-	moreLink.setAttribute("target", "_blank");
+	var moreLink = document.createElement("button");
+	moreLink.setAttribute("onclick", "learnMore(" + '"' + project_name + '"' + ")");
 	moreLink.setAttribute("class", "learn-more");
 	moreLink.innerHTML = "<i>(learn more)</i>";
 
@@ -103,11 +93,10 @@ function generateProject(project_name, project_hackathon, project_github, projec
 	var breakSpace = document.createElement("div");
 	breakSpace.className = "break-space";
 
-
 	newProject.append(newProjectEntry);
 		newProjectEntry.append(newProjectEntryTitle);
-			if (project_github) {
-				newProjectEntryTitle.append(githubLink);
+		if (project_github) {
+			newProjectEntryTitle.append(githubLink);
 		}
 		newProjectEntry.append(newProjectEntryTools);
 		newProjectEntry.append(preSpace);
