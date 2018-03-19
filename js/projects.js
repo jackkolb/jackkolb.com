@@ -2,13 +2,11 @@
 
 
 function handleProjects() {
-	removeProjects();
-	removeProjectPage();
-	removeAbout();
-
+	removeAll();
 	loadProjects();
 	showBar("projects-button");
 	projects_active = true;
+	return;
 }
 
 
@@ -33,6 +31,7 @@ function loadProjects() {
 			});
 			document.body.insertBefore(projects, document.getElementById("content"));
 		});
+	return;
 }
 
 
@@ -43,6 +42,7 @@ function removeProjects() {
 		hideBar("projects-button");
 		projects_active = false;
 	}
+	return;
 }
 
 

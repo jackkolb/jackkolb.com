@@ -17,6 +17,7 @@ function learnMore(project_name) {
         };
       });
     });
+  return;
 }
 
 
@@ -26,6 +27,7 @@ function removeProjectPage() {
     element.parentNode.removeChild(element);
     projectpage_active = false;
   }
+  return;
 }
 
 
@@ -110,8 +112,7 @@ function generateProjectPage(project_title="", project_github="none", project_to
       image.setAttribute("width", "auto");
       image.setAttribute("style", "margin: 10px; border: 1px solid white")
       images.append(image);
-   });
-
+    });
 
   project.append(title);
   project.append(return_button_div);

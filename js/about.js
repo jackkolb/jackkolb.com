@@ -1,15 +1,11 @@
 // javascript functions for about tab
 
-
+// handles the 
 function handleAbout() {
-	removeProjects();
-	removeProjectPage();
-	removeAbout();
-
+	removeAll();
 	loadAbout();
 	showBar("about-button");
 	about_active = true;
-
 	return;
 }
 
@@ -50,17 +46,12 @@ function loadAbout() {
 	//courses.append(cs_courses);
 
 	about.append("<br>");
-
 	about.append(school);
 	about.append(major);
-
 	about.append(work_title);
-
 	about.append(org_title);
 	about.append(orgs);
-
 	about.append(intro);
-
 	about.append(courses);
 
 	document.body.insertBefore(about, document.getElementById("content"));
@@ -70,12 +61,13 @@ function loadAbout() {
 
 
 function removeAbout() {
-	if (about_active) {
-		var element = document.getElementById("about");
-		element.parentNode.removeChild(element);
-		about_active = false;
-		hideBar("about-button");
-	}
+  if (about_active) {
+	var element = document.getElementById("about");
+	element.parentNode.removeChild(element);
+	about_active = false;
+	hideBar("about-button");
+  }
+  return;
 }
 
 
@@ -130,13 +122,13 @@ function generateCSCourses() {
 		var mydata = JSON.parse(text);
 
 		var cs_courses_title = document.createElement("div");
-		    cs_courses_title.className = "cs-courses-title";
-		    cs_courses_title.innerHTML = "<br>Computer Science Courses:<br>";
+		  cs_courses_title.className = "cs-courses-title";
+		  cs_courses_title.innerHTML = "<br>Computer Science Courses:<br>";
 		courses.append(cs_courses_title);
 
 		mydata["courses"].forEach(function(entry) {
 			var course = document.createElement("div");
-				course.className = "cs-course";
+		  	course.className = "cs-course";
 				course.innerHTML = entry.name + "<br>";
 			courses.append(course);
 		});
