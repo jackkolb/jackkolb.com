@@ -26,19 +26,19 @@ function generateHome() {
     github_icon.setAttribute("href", "https://github.com/jackkolb");
     github_icon.setAttribute("target", "_blank");
     github_icon.setAttribute("style", "text-decoration: none; margin: 10px");
-    github_icon.innerHTML = "<img src='assets/github_white.png' height='100%'>";
+    github_icon.innerHTML = "<img src='img/github_white.png' height='100%'>";
 
   var linkedin_icon = document.createElement("a");
     linkedin_icon.setAttribute("href", "https://www.linkedin.com/in/jack-kolb-786134b8/");
     linkedin_icon.setAttribute("target", "_blank");
     linkedin_icon.setAttribute("style", "text-decoration: none;  margin: 10px");
-    linkedin_icon.innerHTML = "<img src='assets/linkedin_white.png' height='100%'>";
+    linkedin_icon.innerHTML = "<img src='img/linkedin_white.png' height='100%'>";
 
   var facebook_icon = document.createElement("a");
     facebook_icon.setAttribute("href", "https://facebook.com/jackhkolb");
     facebook_icon.setAttribute("target", "_blank");
     facebook_icon.setAttribute("style", "text-decoration: none;  margin: 10px");
-    facebook_icon.innerHTML = "<img src='assets/facebook_white.png' height='100%'>";
+    facebook_icon.innerHTML = "<img src='img/facebook_white.png' height='100%'>";
 
   icons.append(github_icon);
   icons.append(linkedin_icon);
