@@ -13,16 +13,27 @@
 		},
 
 		{
-
 			"name": "ElectionCat",
 			"hackathon": "true",
 			"github": "https://github.com/jackkolb/electioncat",
 			"tools": "HTML, CSS, Python, Flask, Azure",
-			"time": "HackTech, Early 2018",
+			"time": "HackTech 2018",
 			"status": "Complete",
 			"short": "A simple, beautiful, election system for student organizations",
 			"images": ["img/electioncat_1.png", "img/electioncat_2.png"],
 			"long": "ElectionCat is made for university student organization elections. Setup is simple and hassle-free, with straightforward JSON files holding candidate and voter information, and only depends on Flask. Deployment is painfree, just download the package, change the settings, and upload the package to Azure/Heroku/AWS. The webapp looks great on both desktop and mobile devices, and 'just works'."
+		},
+		
+		{
+			"name": "Blindsight",
+			"hackathon": "true",
+			"github": "https://github.com/jackkolb/blindsight",
+			"tools": "Python, Flask, Raspberry Pi",
+			"time": "Citrus Hack 2018",
+			"status": "Complete",
+			"short": "Translates your surroundings into haptic feedback",
+			"images": ["img/electioncat_1.png", "img/electioncat_2.png"],
+			"long": "Blindsight uses an oscillating ultrasonic sensor mounted on a hat to create a depth field of its surroundings, activating vibration sensors corresponding to the angle and intensity of the surrounding object. This allows you to 'feel' your surroundings, and is intended to help the visually impaired navigate through buildings."
 		},
 
 		{
@@ -74,7 +85,7 @@
 			"status": "Complete (actively maintained)",
 			"short": "A LINE chatbot with a wide array of features",
 			"images": ["img/linebot_1.png", "img/linebot_2.png"],
-			"long": "I made this bot to aid a gaming clan with various aspects of their internal management. The bot has a variety of useful features, including alarms, a timezone conversion system, auto-submission of Google Forms, Google Sheets lookups of item costs (using a 'Best Match' approach), player points, and other information, links to clan documents, generating pre-filled Google Forms, and various 'fun' commands. I am no longer actively involved with the game, but still maintain the bot."
+			"long": "I made this bot to aid a gaming clan with various aspects of their internal management. The bot has a variety of useful features, including automatic timers, generation and auto-submission of Google Forms, Google Sheets item:cost lookups using a 'Best Match' approach, links to clan documents, and various other commands. I am no longer actively involved with the game, but still maintain the bot."
 		},
 
 		{
@@ -86,7 +97,7 @@
 			"tools": "Python, OpenCV, Raspberry Pi",
 			"short": "A robot that observes and tracks three identical cups",
 			"images": ["img/threecups_1.png", "img/threecups_2.png"],
-			"long": "You probably know the game: a magician has three identical cups, one with a ball underneath. They show you the one with the ball, shuffle them thoroughly, and you need to identify the one with the ball. This project acts as the observer, tracking the cups and showing (through turning on one of three lights) the one with the ball. It actually worked quite well, better than humans!"
+			"long": "You probably know the game: a magician has three identical cups, one with a ball underneath. They show you the one with the ball, shuffle them thoroughly, and you need to identify the cup with the ball. This project acts as the observer, tracking the cups and showing (through turning on one of three lights) the one with the ball. It actually worked quite well, better than humans!"
 		},
 
 		{
