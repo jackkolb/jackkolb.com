@@ -14,20 +14,14 @@ function loadProjects() {
 	fetch('json/projects.json')
 		.then(response => response.text())
 		.then(function(text) {
-
 			var mydata = JSON.parse(text);
 			var projects = document.createElement("div");
 			projects.append("<br>");
 			projects.id = "projects";
-			var timer = 50;
 
 			mydata["projects"].forEach(function(entry) {
-				timer += 50;
-
-				setTimeout(function() {
-					var newProject = generateProject(entry.name, entry.hackathon, entry.github, entry.tools, entry.short);
-  					projects.append(newProject);
-					}, timer);
+				var newProject = generateProject(entry.name, entry.hackathon, entry.github, entry.tools, entry.short);
+  				projects.append(newProject);
 			});
 			document.body.insertBefore(projects, document.getElementById("content"));
 		});
@@ -59,7 +53,7 @@ function generateProject(project_name, project_hackathon, project_github, projec
 	var githubLink = document.createElement("a");
 	githubLink.setAttribute("href", project_github);
 	githubLink.setAttribute("target", "_blank");
-	githubLink.innerHTML = "<span style='float:right'><img src='assets/github_white.png' height='25'></span>";
+	githubLink.innerHTML = "<span style='float:right'><img src='img/github_white.png' height='25'></span>";
 
 	var hackathonTag = document.createElement("div");
 	hackathonTag.className = "project-entry-title";
