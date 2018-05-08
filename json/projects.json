@@ -32,7 +32,7 @@
 			"time": "Citrus Hack 2018",
 			"status": "Complete",
 			"short": "Translates your surroundings into haptic feedback",
-			"images": ["img/electioncat_1.png", "img/electioncat_2.png"],
+			"images": ["img/blindsight_1.png", "img/blindsight_2.png"],
 			"long": "Blindsight uses an oscillating ultrasonic sensor mounted on a hat to create a depth field of its surroundings, activating vibration sensors corresponding to the angle and intensity of the surrounding object. This allows you to 'feel' your surroundings, and is intended to help the visually impaired navigate through buildings."
 		},
 
