@@ -1,6 +1,10 @@
 {
 	"orgs":
 	[
+                {
+                        "title": "UCR Robosub",
+                        "name": "Competitive Autonomous Submarine Team",
+                        "link": "https://robosub.ucr.edu"
 		{
 			"title": "ASME @ UCR",
 			"name": "American Society of Mechanical Engineers",
