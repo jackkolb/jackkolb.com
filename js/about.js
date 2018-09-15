@@ -11,6 +11,12 @@ function handleAbout() {
 
 
 function loadAbout() {
+	var majenta_color = "<span style='color:#ff33cc'>"
+	var green_color = "<span style='color:#5cd65c'>"
+	var gold_color = "<span style='color:#ffcc66'>"
+	var red_color = "<span style='color:#dd0000'>"
+	var blue_color = "<span style='color:#4477ff'>"
+
 	var about = document.createElement("div");
 		about.id = "about";
 		about.className = "about-box"
@@ -23,19 +29,27 @@ function loadAbout() {
 		major.className = "major-about";
 		major.innerHTML = "Mechanical Engineering (2020)<br><br>";
 
-	var work_title = document.createElement("div");
-		work_title.className = "work-about";
-		work_title.innerHTML = "Current Position: Mechanical Lead, <span style='color:#4477ff'>UCR Robosub<span><br><br>";	  			
+	var work_title_1 = document.createElement("div");
+		work_title_1.className = "intro-about";
+		work_title_1.innerHTML = majenta_color + "Project Lead</span> for " + blue_color + "UCR RoboSub</span><br>";	  			
+
+	var work_title_2 = document.createElement("div");
+		work_title_2.className = "intro-about";
+		work_title_2.innerHTML = green_color + "Resident Advisor</span> for " + red_color + "UCR Residential Life</span><br>";
+
+	var work_title_3 = document.createElement("div");
+		work_title_3.className = "intro-about";
+		work_title_3.innerHTML = blue_color + "Officer</span> for " + gold_color + "IEEE at UCR</span><br><br>";
 
 	var org_title = document.createElement("div");
 	    org_title.className = "org-title";
-	    org_title.innerHTML = "My interests are in <span style='color:#dd0000'>robotics</span>, <span style='color:#ff33cc'>software engineering</span>, <span style='color:#5cd65c'>AI</span>, and <span style='color:#4477ff'>entrepreneurship</span>. I am actively involved in:<br><br>"
+	    org_title.innerHTML = "My interests are in " + blue_color + "robotics</span>, " + gold_color + "software engineering</span>, " + green_color + "AI</span>, and " + red_color + "entrepreneurship</span>. I am actively involved in:<br><br>"
 
 	var orgs = generateOrgs();
 
 	var intro = document.createElement("div");
 	    intro.className = "intro-about";
-	    intro.innerHTML = "<br><br>When not in class, I can be found coding, Robosubing, playing piano, attending student org meetings and campus events, sitting in on CS lectures, and learning new languages... probably coding. Check out the projects section!<br><br>"
+	    intro.innerHTML = "<br><br>When not in class, I can be found coding, RoboSubing, playing piano, attending student org meetings and campus events, sitting in on lectures, and learning new languages... probably coding. Check out the projects section!<br><br>"
 
 
 	var courses = document.createElement("div");
@@ -48,7 +62,9 @@ function loadAbout() {
 	about.append("<br>");
 	about.append(school);
 	about.append(major);
-	about.append(work_title);
+	about.append(work_title_1);
+	about.append(work_title_2);
+	about.append(work_title_3);
 	about.append(org_title);
 	about.append(orgs);
 	about.append(intro);
