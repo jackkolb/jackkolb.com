@@ -43,7 +43,7 @@ function loadAbout() {
 
 	var org_title = document.createElement("div");
 	    org_title.className = "org-title";
-	    org_title.innerHTML = "My interests are in " + blue_color + "robotics</span>, " + gold_color + "software engineering</span>, " + green_color + "AI</span>, and " + red_color + "entrepreneurship</span>. I am actively involved in:<br><br>"
+	    org_title.innerHTML = "My interests are in " + blue_color + "robotics</span>, " + majenta_color + "software engineering</span>, " + green_color + "AI</span>, and " + red_color + "entrepreneurship</span>. I am actively involved in:<br><br>"
 
 	var orgs = generateOrgs();
 
