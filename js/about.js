@@ -64,7 +64,7 @@ function loadAbout() {
 	about.append(major);
 	about.append(work_title_1);
 	about.append(work_title_2);
-	about.append(work_title_3);
+	//about.append(work_title_3);
 	about.append(org_title);
 	about.append(orgs);
 	about.append(intro);
