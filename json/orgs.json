@@ -8,25 +8,25 @@
 		},
 
 		{
-			"title": "ASME @ UCR",
+			"title": "ASME at UCR",
 			"name": "American Society of Mechanical Engineers",
 			"link": "https://ucrasme.wixsite.com/ucr-asme"
 		},
 
 		{
-			"title": "ACM @ UCR",
+			"title": "ACM at UCR",
 			"name": "Association of Computing Machinery",
 			"link": "https://acmucr.org"
 		},
 
 		{
-			"title": "IEEE @ UCR",
+			"title": "IEEE at UCR",
 			"name": "Institute of Electronics and Electrical Engineers",
 			"link": "http://ieee.ee.ucr.edu"
 		},
 
 		{
-			"title": "NRHH",
+			"title": "NRHH at UCR",
 			"name": "National Residence Hall Honorary",
 			"link": "http://nrhh.ucr.edu"
 		},
@@ -38,7 +38,7 @@
 		},
 
 		{
-			"title": "CCE @ UCR",
+			"title": "CCE at UCR",
 			"name": "Cross Campus Entrepreneurs",
 			"link": "http://cce.ucr.edu"
 		}
