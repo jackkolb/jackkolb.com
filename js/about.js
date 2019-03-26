@@ -39,7 +39,7 @@ function loadAbout() {
 
 	var work_title_3 = document.createElement("div");
 		work_title_3.className = "intro-about";
-		work_title_3.innerHTML = blue_color + "Officer</span> for " + gold_color + "IEEE at UCR</span><br><br>";
+		work_title_3.innerHTML = blue_color + "Projects Coordinator</span> for " + gold_color + "IEEE at UCR</span><br><br>";
 
 	var org_title = document.createElement("div");
 	    org_title.className = "org-title";
@@ -64,7 +64,7 @@ function loadAbout() {
 	about.append(major);
 	about.append(work_title_1);
 	about.append(work_title_2);
-	//about.append(work_title_3);
+	about.append(work_title_3);
 	about.append("<br><br>");
 	about.append(org_title);
 	about.append(orgs);
