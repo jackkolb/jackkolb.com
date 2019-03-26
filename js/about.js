@@ -39,7 +39,7 @@ function loadAbout() {
 
 	var work_title_3 = document.createElement("div");
 		work_title_3.className = "intro-about";
-		work_title_3.innerHTML = blue_color + "Projects Coordinator</span> for " + gold_color + "IEEE at UCR</span><br><br>";
+		work_title_3.innerHTML = blue_color + "Projects Coordinator</span> for " + gold_color + "IEEE at UCR</span><br>";
 
 	var org_title = document.createElement("div");
 	    org_title.className = "org-title";
@@ -50,7 +50,8 @@ function loadAbout() {
 	var intro = document.createElement("div");
 	    intro.className = "intro-about";
 	    intro.innerHTML = "<br><br>When not in class, I can be found coding, RoboSubing, playing piano, attending student org meetings and campus events, sitting in on lectures, and learning new languages... probably coding. Check out the projects section!<br><br>"
-
+    
+    var breakpoint = document.createElement("br");
 
 	var courses = document.createElement("div");
 
@@ -59,14 +60,16 @@ function loadAbout() {
 	var cs_courses = generateCSCourses();
 	//courses.append(cs_courses);
 
-	about.append("<br>");
-	about.append(school);
+	about.append(breakpoint);
+    about.append(breakpoint);
+    about.append(school);
 	about.append(major);
+    about.append(breakpoint);
 	about.append(work_title_1);
 	about.append(work_title_2);
 	about.append(work_title_3);
-	about.append("<br><br>");
-	about.append(org_title);
+	about.append(breakpoint);
+    about.append(org_title);
 	about.append(orgs);
 	about.append(intro);
 	about.append(courses);
