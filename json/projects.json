@@ -30,8 +30,8 @@
 			"tools": "PHP",
 			"time": "2018 - present",
 			"status": "Continual Progress",
-			"short": "Web APIs worth hosting",
-			"images": ["img/littlebox_1.png"],
+			"short": "Small web APIs worth hosting",
+			"images": [],
 			"long": "api.kolb.codes hosts APIs I developed to aid with various projects, and felt them important enough to host for anyone to use. This collection will be added to as more are created!"
 		},
 
