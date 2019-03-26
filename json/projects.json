@@ -1,7 +1,42 @@
 {
 	"projects":
 	[
-		{
+
+        {
+			"name": "Fire Watch",
+			"github": "https://github.com/jackkolb/firewatch",
+		    "hackathon": "true",
+            "tools": "Python, Flask, HTML, CSS",
+			"time": "HackUCI 2019",
+			"status": "Complete",
+			"short": "Uses machine learning to predict fire risk throughout California",
+			"images": ["img/firewatch_1.png", "img/firewatch_2.png"],
+			"long": "Developed as an opportunity to learn basic machine learning, Fire Watch uses linear algebra and 400,000 data points of California's vegetation and precipitation (collected from CalFire, and image visualizations) to predict the likelihood of fire given a coordinate point in California."
+		},
+
+	{
+			"name": "Syncopate",
+			"github": "https://github.com/jackkolb/syncopate",
+			"tools": "Python, Flask, Bash",
+			"time": "2019",
+			"status": "In Progress",
+			"short": "Load balances and manages projects across a scalable  network of devices",
+			"images": [],
+			"long": "Syncopate is intended to allow distributed projects across a number of Raspberry Pis and other devices. Nodes (the devices) register themselves with a centrally hosted Manager, which gives the Nodes projects as per their RAM/disc resources. Nodes update the Manager with project statuses and persistent variables, with the Manager resorting projects as events such as loss of connectivity or power disrupt Nodes. A human Controller is able to see and manage project statuses remotely via the Manager. Syncopates aims to make hosting time-persistent projects simple!"
+		},
+
+	{
+			"name": "api.kolb.codes",
+			"tools": "PHP",
+			"time": "2018 - present",
+			"status": "Continual Progress",
+			"short": "Web APIs worth hosting",
+			"images": ["img/littlebox_1.png"],
+			"long": "api.kolb.codes hosts APIs I developed to aid with various projects, and felt them important enough to host for anyone to use. This collection will be added to as more are created!"
+		},
+
+
+{
 			"name": "Littlebox",
 			"github": "https://github.com/jackkolb/littlebox",
 			"tools": "C++, Boost",
@@ -79,7 +114,7 @@
 		},
 
 		{
-			"name": "Mademoiselle Le'Bot",
+			"name": "LINE Bots",
 			"tools": "Python, LINE, Heroku, Google Drive APIs",
 			"time": "Summer 2018",
 			"status": "Complete (actively maintained)",
