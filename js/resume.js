@@ -2,7 +2,7 @@
 
 
 function handleResume() {
-	var resume_win = window.open("resume/resume.pdf", "_blank");
+	var resume_win = window.open("resume/kolb_jack_resume.pdf", "_blank");
 	resume_win.focus();
 	return;
 }
