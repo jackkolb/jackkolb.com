@@ -1,0 +1,69 @@
+body {
+  background-color: white;
+  font-family: "Source Code Pro";
+  font-size: 13pt;
+}
+
+
+.name-title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+
+.welcome-title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: grey;
+}
+
+
+.icon-row {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	height: 20pt;
+}
+
+
+.buttons {
+	margin-left: auto;
+	margin-right: auto;
+
+	text-align: center;
+}
+
+
+.tab-title {
+  text-align: center;
+  margin-left: 0;
+  margin-right: auto;
+
+  display: inline-block;
+
+  color: black;
+}
+
+
+button {
+  font-family: "Source Code Pro", Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+
+  background-color: white;
+  border: none;
+  padding: 5pt;
+  font-size: 18pt;
+
+  color: black;
+}
+
+
+p {
+  color: green;
+}

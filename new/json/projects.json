@@ -1,0 +1,196 @@
+{
+	"projects":
+	[
+        {
+            "name": "PrimaFacia",
+            "github": "https://github.com/jackkolb/primafacia",
+            "hackathon": "true",
+            "tools": "Python, Flask, HTML, CSS, SocketIO, Firebase, OpenCV",
+            "time": "Biohack 2019",
+            "status": "Complete",
+            "short": "A seamless patient checkup system, using facial recognition authentication",
+            "images": ["img/primafacia_1.png", "img/primafacia_2.png", "img/primafacia_3.png", "img/primafacia_4.png", "img/primafacia_5.png"],
+            "long": "PrimaFacia is designed to innovate medical records through a clean, sleek interface. PrimaFacia incorporates three major aspects of general medical checkups: authentication and verification of doctors, patient reception, and checkup room management. Patients sign into the system and are assigned to the queue; a process moves patients from the queue into open appointment rooms; doctors are recognized as they enter the room, prompting the retrieval of patient medical records. All this through a UX-focused design."
+        },
+
+
+        {
+			"name": "Fire Watch",
+			"github": "https://github.com/jackkolb/firewatch",
+		    "hackathon": "true",
+            "tools": "Python, Flask, HTML, CSS",
+			"time": "HackUCI 2019",
+			"status": "Complete",
+			"short": "Uses machine learning to predict fire risk throughout California",
+			"images": ["img/firewatch_1.png", "img/firewatch_2.png"],
+			"long": "Developed as an opportunity to learn basic machine learning, Fire Watch uses linear algebra and 400,000 data points of California's vegetation and precipitation (collected from CalFire, and image visualizations) to predict the likelihood of fire given a coordinate point in California."
+		},
+
+	{
+			"name": "Syncopate",
+			"github": "https://github.com/jackkolb/syncopate",
+			"tools": "Python, Flask, Bash",
+			"time": "2019",
+			"status": "In Progress",
+			"short": "Load balances and manages projects across a scalable  network of devices",
+			"images": [],
+			"long": "Syncopate is intended to allow distributed projects across a number of Raspberry Pis and other devices. Nodes (the devices) register themselves with a centrally hosted Manager, which gives the Nodes projects as per their RAM/disc resources. Nodes update the Manager with project statuses and persistent variables, with the Manager resorting projects as events such as loss of connectivity or power disrupt Nodes. A human Controller is able to see and manage project statuses remotely via the Manager. Syncopates aims to make hosting time-persistent projects simple!"
+		},
+
+	{
+			"name": "kolb.dev",
+			"tools": "PHP, Google Cloud",
+			"time": "2018 - present",
+			"status": "Continual Progress",
+			"short": "Hosts my projects and other goodies!",
+			"images": [],
+			"long": "Kolb.dev is meant to host my projects, APIs, and other goodies that cannot be done through a static website. It runs on a Google Cloud app engine instance."
+		},
+
+
+{
+			"name": "Littlebox",
+			"github": "https://github.com/jackkolb/littlebox",
+			"tools": "C++, Boost",
+			"time": "Early 2018",
+			"status": "In Progress",
+			"short": "A cross-platform, remote-accessed file server",
+			"images": ["img/littlebox_1.png"],
+			"long": "Littlebox is a TCP/IP file server (and client) written using the boost::asio library. It supports three functions: push (add a file to the server), pull (retrieve a file from the server), and delete (delete a file from the server), however other functions can be built using these three. The idea is to make the server as simple and secure as possible -- separate passwords for server and files, RSA to deliver symmetric keys, thorough documentation, and easy deployment."
+		},
+
+		{
+			"name": "ElectionCat",
+			"hackathon": "true",
+			"github": "https://github.com/jackkolb/electioncat",
+			"tools": "HTML, CSS, Python, Flask, Azure",
+			"time": "HackTech 2018",
+			"status": "Complete",
+			"short": "A simple, beautiful, election system for student organizations",
+			"images": ["img/electioncat_1.png", "img/electioncat_2.png"],
+			"long": "ElectionCat is made for university student organization elections. Setup is simple and hassle-free, with straightforward JSON files holding candidate and voter information, and only depends on Flask. Deployment is painfree, just download the package, change the settings, and upload the package to Azure/Heroku/AWS. The webapp looks great on both desktop and mobile devices, and 'just works'."
+		},
+
+        {
+            "name": "Quadmotion",
+            "hackathon": "true",
+            "github": "https://github.com/jackkolb/quadmotion",
+            "tools": "Python, Flask, C++, Leap Motion, Raspberry Pi, Arduino",
+            "time": "HackIOT 2018",
+            "status": "Complete",
+            "short": "Controls a quadcopter using hand gestures",
+            "long": "Quadmotion used a Raspberry Pi, Arduino, Leap Motion, and a $20 quadcopter to control the quadcopter using hand gestures. We reserve engineered the quadcopter's controller to be controllable via the Arduino, connected the Arduino to the Raspberry Pi, had a Flask server running on the Raspberry Pi, connected the Leap Motion device to another computer and sent control signals from the computer to the Raspberry Pi to control the quadcopter."
+        },
+		
+		{
+			"name": "Blindsight",
+			"hackathon": "true",
+			"github": "https://github.com/jackkolb/blindsight",
+			"tools": "Python, Flask, Raspberry Pi",
+			"time": "Citrus Hack 2018",
+			"status": "Complete",
+			"short": "Translates your surroundings into haptic feedback",
+			"images": ["img/blindsight_1.png", "img/blindsight_2.png"],
+			"long": "Blindsight uses an oscillating ultrasonic sensor mounted on a hat to create a depth field of its surroundings, activating vibration sensors corresponding to the angle and intensity of the surrounding object. This allows you to 'feel' your surroundings, and is intended to help the visually impaired navigate through buildings."
+		},
+
+		{
+			"name": "Cryptos",
+			"tools": "Python, Interactive Brokers",
+			"status": "In Progress",
+			"short": "A medium-frequency algorithmic equity/cryptocurrency trader",
+			"long": "Cryptos is a self-sustaining algorithmic trader, designed to be a reliable passive income source."
+		},
+
+		{
+			"name": "WiCon",
+			"github": "https://github.com/jackkolb/wicon",
+			"time": "Late 2017, Early 2018",
+			"status": "Complete",
+			"tools": "Python, GTK3",
+			"short": "A GUI WiFi manager for Linux desktops",
+			"images": ["img/wicon_1.png", "img/wicon_2.png"],
+			"long": "WiCon comes from a personal need: a simple, straightforward, wifi connection tool for ArchLinux. It is essentially a GUI wrapper for iw list, wpa_supplicant, and dhcpcd, leaving the user with minimal work. The interface is clean and simple: the user selects the connection, presses 'Connect', and enters their login information. WiCon does its best to handle all the configuration setup."
+		},
+
+		{
+			"name": "Froot",
+			"hackathon": "true",
+			"time": "CutieHack, Fall 2018",
+			"github": "https://github.com/jackkolb/froot",
+			"tools": "HTML/CSS, Javascript",
+			"status": "Complete",
+			"short": "Creates recipes using discounted grocery items",
+			"images": ["img/froot_1.png", "img/froot_2.png"],
+			"long": "Froot uses a database of discounted grocery items to find recipes using these items. It is intended for cooperation with local grocery stores (pulling from their internal databases) to help broke college students eat better, for less."
+		},
+
+        {
+            "name": "ToDo",
+            "hackathon": "false",
+            "time": "Spring 2019",
+            "github": "https://github.com/jackkolb/todo",
+            "tools": "Python",
+            "status": "Complete",
+            "short": "Simple and easy-to-use todo list tracker",
+            "long": "ToDo fills a personal need for a quick, terminal based todo-list manager. Written in Python, it allows for simple adding and removing of items, using Pyton's built in difflib library to remove items based off best matches"
+        },
+
+
+		{
+			"name": "GoodMorning",
+			"github": "https://github.com/jackkolb/goodmorning",
+			"time": "Early 2018",
+			"status": "Complete",
+			"tools": "Python, Tkinter, Several Web-Based APIs, Raspberry Pi",
+			"short": "A dynamic display of weather and equity information",
+			"images": ["img/goodmorning_1.png", "img/goodmorning_2.png"],
+			"long": "Using a cheap 8-inch screen and a Raspberry Pi, I wrote a 'Good Morning' board that displays the date, time, weather, and stock/crypto information over a background that changes on the time of day and weather. It is currently hanging next to my bathroom mirror -- quite useful!"
+		},
+
+		{
+			"name": "LINE Bots",
+			"tools": "Python, LINE, Heroku, Google Drive APIs",
+			"time": "Summer 2018",
+			"status": "Complete (actively maintained)",
+			"short": "A LINE chatbot with a wide array of features",
+			"images": ["img/linebot_1.png", "img/linebot_2.png"],
+			"long": "I made this bot to aid a gaming clan with various aspects of their internal management. The bot has a variety of useful features, including automatic timers, generation and auto-submission of Google Forms, Google Sheets item:cost lookups using a 'Best Match' approach, links to clan documents, and various other commands. I am no longer actively involved with the game, but still maintain the bot."
+		},
+
+		{
+			"name": "Three Cups",
+			"hackathon": "true",
+			"status": "Complete",
+			"time": "CutieHack, Spring 2017",
+			"github": "https://github.com/jackkolb/threecups",
+			"tools": "Python, OpenCV, Raspberry Pi",
+			"short": "A robot that observes and tracks three identical cups",
+			"images": ["img/threecups_1.png", "img/threecups_2.png"],
+			"long": "You probably know the game: a magician has three identical cups, one with a ball underneath. They show you the one with the ball, shuffle them thoroughly, and you need to identify the cup with the ball. This project acts as the observer, tracking the cups and showing (through turning on one of three lights) the one with the ball. It actually worked quite well, better than humans!"
+		},
+
+		{
+			"name": "TranSec",
+			"hackathon": "true",
+			"status": "Complete",
+			"github": "https://github.com/jackkolb/transec",
+			"time": "Enginuity Hackathon, Spring 2017",
+			"tools": "C++, WinSock Library",
+			"short": "An end-to-end encrypted file transfer program",
+			"images": ["img/transec_1.png"],
+			"long": "TranSec was made to securely transfer files between computers assuming prying eyes (network administrators, NSA, etc) at all points between the outbound and inbound network cards. The code itself is highly inefficient, I wrote the symmetric key encryption algorithm myself (so it is likely not too secure), however it works, it taught me lots about networking, and I am proud of it as my first C++ project."
+		},
+
+		{
+			"name": "FoodText",
+			"time": "Fall 2016",
+			"status": "Complete",
+			"tools": "Python, Google Drive APIs, Raspberry Pi",
+			"short": "Delivers UCR's daily dining menus via regular text messages",
+			"images": ["img/foodtext_1.png"],
+			"long": "After looking up UCR's residential restaurant's menus on a daily basis, I decided to automate it. The service sends out the day's menus from the three UCR restaurants via SMS, scrapping the websites and presenting the information in an easy-to-read format. Phone number registration is done via a Google Form, and the server runs on a Raspberry Pi."
+		}
+
+	]
+}

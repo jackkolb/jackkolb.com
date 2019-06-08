@@ -1,0 +1,47 @@
+{
+	"orgs":
+	[
+		{
+			"title": "UCR RoboSub",
+			"name": "Competitive Autonomous Submarine Project",
+			"link": "http://robosub.ucr.edu"
+		},
+
+		{
+			"title": "ASME at UCR",
+			"name": "American Society of Mechanical Engineers",
+			"link": "https://ucrasme.wixsite.com/ucr-asme"
+		},
+
+		{
+			"title": "ACM at UCR",
+			"name": "Association of Computing Machinery",
+			"link": "https://acmucr.org"
+		},
+
+		{
+			"title": "IEEE at UCR",
+			"name": "Institute of Electronics and Electrical Engineers",
+			"link": "http://ieee.ee.ucr.edu"
+		},
+
+		{
+			"title": "NRHH at UCR",
+			"name": "National Residence Hall Honorary",
+			"link": "http://nrhh.ucr.edu"
+		},
+
+		{
+			"title": "Honors",
+			"name": "University Honors at UCR",
+			"link": "http://honors.ucr.edu"
+		},
+
+		{
+			"title": "CCE at UCR",
+			"name": "Cross Campus Entrepreneurs",
+			"link": "http://cce.ucr.edu"
+		}
+	]
+}
+

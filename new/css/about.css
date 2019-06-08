@@ -1,0 +1,36 @@
+.about-box {
+	width: 700px;
+  	margin-left: auto;
+    margin-right: auto;
+}
+
+.school-about {
+	color: #4477ff;
+}
+
+.major-about {
+	color: #ffcc66;
+	margin-left: 20pt;
+}
+
+.work-about {
+	color: #5cd65c;
+}
+
+.gpa-about {
+	color: #990022;
+}
+
+.intro-about {
+	color: black;
+}
+
+.org-title {
+	color: black;
+}
+
+a.org-about {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #4477ff;
+}

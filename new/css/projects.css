@@ -1,0 +1,57 @@
+.projects-subtitle {
+  	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: white;
+  }
+
+  a.learn-more {
+    float: right;
+    text-decoration: none;
+    color: #4477ff;
+  }
+
+  button.learn-more {
+    float: right;
+    text-decoration: none;
+    color: #4477ff;
+    font-size: 10pt;
+    padding: 0;
+  }
+
+  .project-entry {
+  	border-left: 1px solid lightgrey;
+  	padding-left: 10px;
+  	width: 600px;
+  	height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-entry-title {
+  	font-size: 14pt;
+	  color: white;
+  }
+
+  .project-entry-tools {
+  	font-size: 10pt;
+	  color: white;
+  }
+
+  .project-entry-desc {
+  	font-size: 10pt;
+	  color: #5cd65c;
+  }
+
+  .small-space {
+  	height: 5px;
+  }
+
+  .big-space {
+  	height: 10px;
+  }
+
+  .break-space {
+  	height: 25px;
+  }

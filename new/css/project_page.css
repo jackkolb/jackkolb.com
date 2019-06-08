@@ -1,0 +1,73 @@
+.project-name-title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: white;
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+
+.project-block {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 80%;
+
+  font-size: 11pt;
+
+  border-top: 1px solid white;
+  margin-top: 10px;
+}
+
+.project-intro-block {
+  font-size: 11pt;
+  
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+}
+
+.return-button-div {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.return-button {
+  font-size: 11pt;
+  color: white;
+}
+
+.project-intro-title {
+  color: #4477ff;
+}
+
+.project-intro-year {
+  color: #5cd65c;
+}
+
+.project-intro-status {
+  color: #ff33cc;
+}
+
+.project-intro-tools {
+  color: #ffcc66;
+}
+
+.project-intro-short {
+  color: lightblue;
+}
+
+.project-intro-long {
+  color: white;
+}
+
+.project-images {
+  text-align: center;
+}
+
+a.project-intro-link {
+  color: #ff2222;
+}
