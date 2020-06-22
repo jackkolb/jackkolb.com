@@ -3,7 +3,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    color: white;
+  /*  color: white;*/
   }
 
   a.learn-more {
@@ -21,9 +21,9 @@
   }
 
   .project-entry {
-  	border-left: 1px solid lightgrey;
+  	border-left: 1px solid grey;
   	padding-left: 10px;
-  	width: 600px;
+  	width: 650px;
   	height: 10%;
     margin-left: auto;
     margin-right: auto;
@@ -31,17 +31,17 @@
 
   .project-entry-title {
   	font-size: 14pt;
-	  color: white;
+	  color: #4477ff;
   }
 
   .project-entry-tools {
   	font-size: 10pt;
-	  color: white;
+	 /* color: white;*/
   }
 
   .project-entry-desc {
   	font-size: 10pt;
-	  color: #5cd65c;
+	  color: #253f3f;
   }
 
   .small-space {

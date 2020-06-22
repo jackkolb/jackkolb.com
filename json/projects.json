@@ -2,7 +2,7 @@
 	"projects":
 	[
         {
-            "name": "PrimaFacia",
+            "name": "FirstGlance",
             "github": "https://github.com/jackkolb/primafacia",
             "hackathon": "true",
             "tools": "Python, Flask, HTML, CSS, SocketIO, Firebase, OpenCV",

@@ -73,6 +73,10 @@ p {
   color: green;
 }
 
+.light {
+  color: darkslateblue;
+}
+
 .dark {
   color: whitesmoke;
 }
