@@ -121,14 +121,18 @@ function generateProjectPage(project_title="", project_github="none", project_to
   project.append(project_block);
   project_block.append(intro_block);
 
+  intro_block.append("<br>");
   intro_block.append(intro_name);
   intro_block.append(intro_year);
   intro_block.append(intro_status);
   intro_block.append(intro_link);
   intro_block.append(intro_tools);
   intro_block.append(intro_short);
+  intro_block.append("<br>");
 
+  project_block.append("<br>");
   project_block.append(intro_long);
+  project_block.append("<br>");
   project_block.append(images);
 
 

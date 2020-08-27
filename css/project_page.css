@@ -37,7 +37,7 @@
 
 .return-button {
   font-size: 11pt;
-  color: inherit;
+  color: white;
 }
 
 .project-intro-title {
@@ -61,7 +61,7 @@
 }
 
 .project-intro-long {
-  color: inherit;
+  color: white;
 }
 
 .project-images {
