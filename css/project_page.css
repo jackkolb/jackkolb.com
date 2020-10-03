@@ -17,14 +17,14 @@
 
   font-size: 11pt;
 
-  border-top: 1px solid white;
+  border-top: 1px solid #253f3f;
   margin-top: 10px;
 }
 
 .project-intro-block {
   font-size: 11pt;
   
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #253f3f;
   margin-bottom: 10px;
 }
 
@@ -37,7 +37,7 @@
 
 .return-button {
   font-size: 11pt;
-  color: white;
+  color: #253f3f;
 }
 
 .project-intro-title {
@@ -45,7 +45,7 @@
 }
 
 .project-intro-year {
-  color: #5cd65c;
+  color: #3ab43a;
 }
 
 .project-intro-status {
@@ -53,15 +53,15 @@
 }
 
 .project-intro-tools {
-  color: #ffcc66;
+  color: #ddaa44;
 }
 
 .project-intro-short {
-  color: lightblue;
+  color: darkslateblue;
 }
 
 .project-intro-long {
-  color: white;
+  color: #253f3f;
 }
 
 .project-images {

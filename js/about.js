@@ -17,6 +17,7 @@ function loadAbout() {
 	var tech_gold_color = "<span style='color:#b3a369'>";
 	var red_color = "<span style='color:#dd0000'>";
 	var blue_color = "<span style='color:#4477ff'>";
+	var slate_color = "<span style='color:darkslateblue'>";
 
 	var link_ucr = "<a href='https://ucr.edu' target='_blank'>";
 	var link_ucr_me = "<a href='https://www.me.ucr.edu' target='_blank'>";
@@ -24,7 +25,9 @@ function loadAbout() {
 	var link_robosub = "<a href='https://robosub.ucr.edu' target='_blank'>";
 	var link_gatech = "<a href='https://gatech.edu' target='_blank'>";
 	var link_gatech_robotics = "<a href='https://robotics.gatech.edu' target='_blank'>";
-	var link_chernova = "<a href='https://"
+	var link_chernova = "<a href='https://www.cc.gatech.edu/~chernova' target='_blank'>";
+	var link_robograds = "<a href='https://robograds.gatech.edu' target='_blank'>"
+	var link_rail = "<a href='https://rail.gatech.edu' target='_blank'>"
 
 	var link_reslife = "<a href='https://housing.ucr.edu/residential-life' target='_blank'>";
 	var link_ieee = "<a href='https://ieeeucr.org' target='_blank'>";
@@ -39,8 +42,9 @@ function loadAbout() {
 
 	var education_intro = document.createElement("div");
 		education_intro.className = "intro-about";
-	    education_intro.innerHTML = "I am a first-year " + blue_color + link_gatech_robotics + "<b>Robotics</b></a></span> PhD student at " + tech_gold_color + link_gatech + "<b>Georgia Tech</b></a></span>, advised by " + majenta_color + "<b>Sonia Chernova</b></span>. ";
-        education_intro.innerHTML = education_intro.innerHTML + "My interests are in " + green_color + "<b>artificial intelligence</b></span>, " + red_color + "<b>robotics</b></span>, and " + blue_color + "<b>entrepreneurship</b></span>.<br><br>";
+	    education_intro.innerHTML = "I am a first-year " + blue_color + link_gatech_robotics + "<b>Robotics</b></a></span> PhD student at " + tech_gold_color + link_gatech + "<b>Georgia Tech</b></a></span>, advised by " + majenta_color + link_chernova + "<b>Sonia Chernova</b></a></span>. ";
+		education_intro.innerHTML = education_intro.innerHTML + "My broad interests are in " + green_color + "<b>artificial intelligence</b></span>, " + red_color + "<b>robotics</b></span>, " + blue_color + "<b>entrepreneurship</b></span>, and " + majenta_color + "<b>human-robot interaction</b></span>. ";
+		education_intro.innerHTML = education_intro.innerHTML + "I work in the " + green_color + link_rail + "<b>RAIL Lab</b></a></span>, where I am currently researching how to form human+robot teams to accomplish mission objectives.<br><br>";
 
 	var undergrad = document.createElement("div");
 		undergrad.className = "org-title";
