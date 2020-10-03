@@ -23,7 +23,7 @@
 			"status": "Complete",
 			"short": "Uses machine learning to predict fire risk throughout California",
 			"images": ["img/firewatch_1.png", "img/firewatch_2.png"],
-			"long": "Developed as an opportunity to learn basic machine learning, Fire Watch uses linear algebra and 400,000 data points of California's vegetation and precipitation (collected from CalFire, and image visualizations) to predict the likelihood of fire given a coordinate point in California."
+			"long": "Developed as an opportunity to learn basic machine learning, Fire Watch uses linear algebra and 400,000 data points of California's vegetation, precipitation, and fire history to predict the locations of fires across California."
 		},
 
 		{
@@ -32,9 +32,9 @@
 			"tools": "Python, Flask, Bash",
 			"time": "2019",
 			"status": "In Progress",
-			"short": "Load balances and manages projects across a scalable  network of devices",
+			"short": "Load balances and manages projects across a scalable network of devices",
 			"images": [],
-			"long": "Syncopate is intended to allow distributed projects across a number of Raspberry Pis and other devices. Nodes (the devices) register themselves with a centrally hosted Manager, which gives the Nodes projects as per their RAM/disc resources. Nodes update the Manager with project statuses and persistent variables, with the Manager resorting projects as events such as loss of connectivity or power disrupt Nodes. A human Controller is able to see and manage project statuses remotely via the Manager. Syncopates aims to make hosting time-persistent projects simple!"
+			"long": "Syncopate allows for distributing many projects across a number of computers. Nodes (the devices) register themselves with a centrally hosted Manager, which gives the Nodes projects as per their available resources and reassigns projects when Nodes go offline. A human Controller is able to see and manage the Nodes' project statuses via the Manager. Syncopates aims to make hosting many time-persistent projects simple!"
 		},
 
 		{
@@ -45,9 +45,8 @@
 			"status": "Continual Progress",
 			"short": "Small web projects worth hosting",
 			"images": [],
-			"long": "kolb.dev hosts small projects and APIs. Since no one really knows about them I've kept all resources open for public use. This collection will be added to as more are created! (and my Google Cloud usage stays at $0.05/month)"
+			"long": "kolb.dev hosts my small projects and APIs. Since no one really knows about them I keep all resources open for public use. This collection will be added to as more are created (and my Google Cloud usage stays at $0.05/month)!"
 		},
-
 
 		{
 			"name": "Littlebox",
