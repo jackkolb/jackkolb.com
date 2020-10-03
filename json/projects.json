@@ -26,7 +26,7 @@
 			"long": "Developed as an opportunity to learn basic machine learning, Fire Watch uses linear algebra and 400,000 data points of California's vegetation and precipitation (collected from CalFire, and image visualizations) to predict the likelihood of fire given a coordinate point in California."
 		},
 
-	{
+		{
 			"name": "Syncopate",
 			"github": "https://github.com/jackkolb/syncopate",
 			"tools": "Python, Flask, Bash",
@@ -37,18 +37,18 @@
 			"long": "Syncopate is intended to allow distributed projects across a number of Raspberry Pis and other devices. Nodes (the devices) register themselves with a centrally hosted Manager, which gives the Nodes projects as per their RAM/disc resources. Nodes update the Manager with project statuses and persistent variables, with the Manager resorting projects as events such as loss of connectivity or power disrupt Nodes. A human Controller is able to see and manage project statuses remotely via the Manager. Syncopates aims to make hosting time-persistent projects simple!"
 		},
 
-	{
-			"name": "api.kolb.codes",
-			"tools": "PHP",
+		{
+			"name": "kolb.dev",
+			"tools": "PHP, Golang",
 			"time": "2018 - present",
 			"status": "Continual Progress",
-			"short": "Small web APIs worth hosting",
+			"short": "Small web projects worth hosting",
 			"images": [],
-			"long": "api.kolb.codes hosts APIs I developed to aid with various projects, and felt them important enough to host for anyone to use. This collection will be added to as more are created!"
+			"long": "kolb.dev hosts small projects and APIs. Since no one really knows about them I've kept all resources open for public use. This collection will be added to as more are created! (and my Google Cloud usage stays at $0.05/month)"
 		},
 
 
-{
+		{
 			"name": "Littlebox",
 			"github": "https://github.com/jackkolb/littlebox",
 			"tools": "C++, Boost",
@@ -56,7 +56,7 @@
 			"status": "In Progress",
 			"short": "A cross-platform, remote-accessed file server",
 			"images": ["img/littlebox_1.png"],
-			"long": "Littlebox is a TCP/IP file server (and client) written using the boost::asio library. It supports three functions: push (add a file to the server), pull (retrieve a file from the server), and delete (delete a file from the server), however other functions can be built using these three. The idea is to make the server as simple and secure as possible -- separate passwords for server and files, RSA to deliver symmetric keys, thorough documentation, and easy deployment."
+			"long": "Littlebox is a TCP/IP file server (and client) written in C++ using the boost::asio library. It supports three functions: push (add a file to the server), pull (retrieve a file from the server), and delete (delete a file from the server), however other functions can be built using these three. The idea is to make the server as simple and secure as possible -- separate passwords for server and files, RSA to deliver symmetric keys, thorough documentation, and easy deployment."
 		},
 
 		{
@@ -68,7 +68,7 @@
 			"status": "Complete",
 			"short": "A simple, beautiful, election system for student organizations",
 			"images": ["img/electioncat_1.png", "img/electioncat_2.png"],
-			"long": "ElectionCat is made for university student organization elections. Setup is simple and hassle-free, with straightforward JSON files holding candidate and voter information, and only depends on Flask. Deployment is painfree, just download the package, change the settings, and upload the package to Azure/Heroku/AWS. The webapp looks great on both desktop and mobile devices, and 'just works'."
+			"long": "ElectionCat is made for university student organization elections. Setup is simple and hassle-free, with straightforward JSON files holding candidate and voter information. The only dependency is Python Flask (webserver framework). Deployment is painfree, just download the package, change the settings, and upload the package to Azure/Heroku/AWS. The webapp looks great on both desktop and mobile devices, and 'just works'."
 		},
 		
 		{
@@ -80,15 +80,7 @@
 			"status": "Complete",
 			"short": "Translates your surroundings into haptic feedback",
 			"images": ["img/blindsight_1.png", "img/blindsight_2.png"],
-			"long": "Blindsight uses an oscillating ultrasonic sensor mounted on a hat to create a depth field of its surroundings, activating vibration sensors corresponding to the angle and intensity of the surrounding object. This allows you to 'feel' your surroundings, and is intended to help the visually impaired navigate through buildings."
-		},
-
-		{
-			"name": "Cryptos",
-			"tools": "Python, Interactive Brokers",
-			"status": "In Progress",
-			"short": "A medium-frequency algorithmic equity/cryptocurrency trader",
-			"long": "Cryptos is a self-sustaining algorithmic trader, designed to be a reliable passive income source."
+			"long": "Blindsight uses a cheap oscillating range sensor mounted on a hat to create a depth field of its surroundings, activating vibration sensors corresponding to the direction and proximity of surrounding objects. This allows you to 'feel' your surroundings, allowing visually impaired people to navigate through buildings. Won 3rd place at Citrus Hack 2018."
 		},
 
 		{
@@ -99,7 +91,7 @@
 			"tools": "Python, GTK3",
 			"short": "A GUI WiFi manager for Linux desktops",
 			"images": ["img/wicon_1.png", "img/wicon_2.png"],
-			"long": "WiCon comes from a personal need: a simple, straightforward, wifi connection tool for ArchLinux. It is essentially a GUI wrapper for iw list, wpa_supplicant, and dhcpcd, leaving the user with minimal work. The interface is clean and simple: the user selects the connection, presses 'Connect', and enters their login information. WiCon does its best to handle all the configuration setup."
+			"long": "WiCon comes from a personal need: a simple, straightforward, wifi connection tool for ArchLinux. It is essentially a GUI wrapper for the iw, wpa_supplicant, and dhcpcd tools, leaving the user with minimal command line work. The interface is clean and simple: the user selects the connection, presses 'Connect', and enters their login information. WiCon does its best to handle all the configuration setup."
 		},
 
 		{
@@ -111,7 +103,7 @@
 			"status": "Complete",
 			"short": "Creates recipes using discounted grocery items",
 			"images": ["img/froot_1.png", "img/froot_2.png"],
-			"long": "Froot uses a database of discounted grocery items to find recipes using these items. It is intended for cooperation with local grocery stores (pulling from their internal databases) to help broke college students eat better, for less."
+			"long": "Froot finds recipes using currently discounted grocery items. It is intended for cooperation with local grocery stores (pulling from their internal databases) to help broke college students eat better, for less."
 		},
 
 		{
@@ -122,17 +114,17 @@
 			"tools": "Python, Tkinter, Several Web-Based APIs, Raspberry Pi",
 			"short": "A dynamic display of weather and equity information",
 			"images": ["img/goodmorning_1.png", "img/goodmorning_2.png"],
-			"long": "Using a cheap 8-inch screen and a Raspberry Pi, I wrote a 'Good Morning' board that displays the date, time, weather, and stock/crypto information over a background that changes on the time of day and weather. It is currently hanging next to my bathroom mirror -- quite useful!"
+			"long": "Using a cheap 8-inch screen and a Raspberry Pi, I wrote a 'Good Morning' display that shows the date, time, weather, and market information over a background that changes by the time and weather."
 		},
 
 		{
 			"name": "LINE Bots",
 			"tools": "Python, LINE, Heroku, Google Drive APIs",
-			"time": "Summer 2018",
-			"status": "Complete (actively maintained)",
+			"time": "Summer 2016",
+			"status": "Complete (maintained)",
 			"short": "A LINE chatbot with a wide array of features",
 			"images": ["img/linebot_1.png", "img/linebot_2.png"],
-			"long": "I made this bot to aid a gaming clan with various aspects of their internal management. The bot has a variety of useful features, including automatic timers, generation and auto-submission of Google Forms, Google Sheets item:cost lookups using a 'Best Match' approach, links to clan documents, and various other commands. I am no longer actively involved with the game, but still maintain the bot."
+			"long": "I made a LINE bot to aid a gaming clan with various aspects of their internal management. The bot has a variety of features including automatic alarm clocks, Google Forms autofill and submission, information retrieval from Google Sheets, algorithms to best guess intended commands, and various other functions. The bot has been used over 700,000 times by over 120 people, and is still in active use."
 		},
 
 		{
@@ -156,7 +148,7 @@
 			"tools": "C++, WinSock Library",
 			"short": "An end-to-end encrypted file transfer program",
 			"images": ["img/transec_1.png"],
-			"long": "TranSec was made to securely transfer files between computers assuming prying eyes (network administrators, NSA, etc) at all points between the outbound and inbound network cards. The code itself is highly inefficient, I wrote the symmetric key encryption algorithm myself (so it is likely not too secure), however it works, it taught me lots about networking, and I am proud of it as my first C++ project."
+			"long": "TranSec transfers files between computers assuming prying eyes at all points between the sender and receiver's network cards. The code itself is highly inefficient, the encryption algorithm myself is questionable, however it was my first C++ project, it works, and I am proud of it."
 		},
 
 		{

@@ -24,9 +24,10 @@ function loadAbout() {
 	var link_robosub = "<a href='https://robosub.ucr.edu' target='_blank'>";
 	var link_gatech = "<a href='https://gatech.edu' target='_blank'>";
 	var link_gatech_robotics = "<a href='https://robotics.gatech.edu' target='_blank'>";
+	var link_chernova = "<a href='https://"
+
 	var link_reslife = "<a href='https://housing.ucr.edu/residential-life' target='_blank'>";
 	var link_ieee = "<a href='https://ieeeucr.org' target='_blank'>";
-
 	var link_asme = "<a href='https://asmeucr.com' target='_blank'>";
 	var link_acm = "<a href='https://acmucr.org' target='_blank'>";
 	var link_nrhh = "<a href='https://nrhh.ucr.edu/home.html' target='_blank'>";
@@ -38,8 +39,8 @@ function loadAbout() {
 
 	var education_intro = document.createElement("div");
 		education_intro.className = "intro-about";
-	    education_intro.innerHTML = "I am a first-year " + blue_color + link_gatech_robotics + "<b>Robotics</b></a></span> PhD student at " + tech_gold_color + link_gatech + "<b>Georgia Tech</b></a></span>. ";
-        education_intro.innerHTML = education_intro.innerHTML + "My interests are in " + green_color + "<b>artificial intelligence</b></span>, " + majenta_color + "<b>software engineering</b></span>, " + red_color + "<b>robotics</b></span>, and " + blue_color + "<b>entrepreneurship</b></span>.<br><br>";
+	    education_intro.innerHTML = "I am a first-year " + blue_color + link_gatech_robotics + "<b>Robotics</b></a></span> PhD student at " + tech_gold_color + link_gatech + "<b>Georgia Tech</b></a></span>, advised by " + majenta_color + "<b>Sonia Chernova</b></span>. ";
+        education_intro.innerHTML = education_intro.innerHTML + "My interests are in " + green_color + "<b>artificial intelligence</b></span>, " + red_color + "<b>robotics</b></span>, and " + blue_color + "<b>entrepreneurship</b></span>.<br><br>";
 
 	var undergrad = document.createElement("div");
 		undergrad.className = "org-title";
@@ -67,7 +68,7 @@ function loadAbout() {
 
 	var intro = document.createElement("div");
 	    intro.className = "intro-about";
-	    intro.innerHTML = "<br><br>I spend most of my time working on side projects, playing piano, sitting in on lectures, and learning new languages. Check out the projects section!<br><br>"
+	    intro.innerHTML = "<br><br>I spend most of my spare time working on side projects, playing piano, sitting in on lectures, and learning world languages. Check out the projects section!<br><br>"
     
     var breakpoint = document.createElement("br");
 
