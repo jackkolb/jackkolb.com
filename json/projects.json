@@ -9,7 +9,7 @@
             "time": "Biohack 2019",
             "status": "Complete",
             "short": "A seamless patient checkup system, using facial recognition authentication",
-            "images": ["img/primafacia_1.png", "img/primafacia_2.png", "img/primafacia_3.png", "img/primafacia_4.png", "img/primafacia_5.png"],
+            "images": ["img/primafacia_1.png", "img/primafacia_4.png"],
             "long": "PrimaFacia is designed to innovate medical records through a clean, sleek interface. PrimaFacia incorporates three major aspects of general medical checkups: authentication and verification of doctors, patient reception, and checkup room management Patients sign into the systemm and are assigned to a queue; a process moves patients from the queue into open appointment rooms; doctors are recognized as they enter the room, prompting the retrieval of patient medical recod. All this through a UX-focused design."
         },
 
