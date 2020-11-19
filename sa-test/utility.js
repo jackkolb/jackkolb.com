@@ -13,9 +13,9 @@ function randomFromArray(arr) {
 
 // handles mouse clicks to cycle the warehouse states
 function mouseHandler(event) {
-    if (event.originalTarget == document.getElementById("Canvas")) {
-        var canvasX = event.clientX - event.originalTarget.offsetLeft;
-        var canvasY = event.clientY - event.originalTarget.offsetTop;
+    if (event.originalTarget == document.getElementById("Canvas") || event.target == document.getElementById("Canvas")) {
+        var canvasX = event.clientX - (event.originalTarget ? event.originalTarget.offsetLeft : event.target.offsetLeft);
+        var canvasY = event.clientY - (event.originalTarget ? event.originalTarget.offsetTop : event.target.offsetTop);
         var canvasClick = [canvasX, canvasY];
 
         for (i in gameboard.warehouses) {
