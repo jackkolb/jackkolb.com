@@ -74,7 +74,7 @@ function sidePanelTutorial3() {
         gameboard.generateGameboard();
         gameActive = false;
         tutorialActive = false;
-        sagat = new SAGAT(5);
+        sagat = new SAGAT(20);
         sidePanelShowIntro();
     };
 }
