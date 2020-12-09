@@ -63,7 +63,7 @@ class Warehouse {
     // draws the capacity bar to the right of the warehouse
     drawCapacity(sagatActive) {
         var indicatorCapacity = this.count / this.capacity;
-        var indicatorColor = sagatActive ? "lightgrey" : indicatorCapacity < .6 ? "green" : indicatorCapacity < .90 ? "orange" : indicatorCapacity < 1 ? "red" : "red";  // when full and 90%+, will turn red
+        var indicatorColor = sagatActive ? "lightgrey" : indicatorCapacity < .7 ? "green" : indicatorCapacity < .90 ? "orange" : indicatorCapacity < 1 ? "red" : "red";  // when full and 90%+, will turn red
         drawRectangle(this.context, this.location[0]+this.height*.75, this.location[1]+this.height/2 - this.height/2, 10, this.height, "lightgrey") 
         drawRectangle(this.context, this.location[0]+this.height*.75, this.location[1]+this.height/2 - indicatorCapacity * this.height/2, 10, indicatorCapacity * this.height, indicatorColor) 
     }

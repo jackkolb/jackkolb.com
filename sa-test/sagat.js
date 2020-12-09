@@ -15,7 +15,7 @@ class SAGAT {
 
         this.scores = [];
         this.sagatCount = 1;
-        this.sagatMaxFreezes = 5;
+        this.sagatMaxFreezes = 6;
     }
 
     // start the sagat timer
@@ -53,20 +53,23 @@ class SAGAT {
         for (var i in warehouses) {
             warehouseSelections.push(warehouses[i].selected);
         }
-        this.gradeTest(warehouseSelections);
         this.active = false;  // set the sagat test to inactive
-        if (this.sagatCount <= this.sagatMaxFreezes) {
-            sidePanelShowInformation();  // change the displayed side panel information
+        this.gradeTest(warehouseSelections);
+        if (!this.active) {  // if the gradeTest() allows the test to continue
+            if (this.sagatCount <= this.sagatMaxFreezes) {
+                sidePanelShowInformation();  // change the displayed side panel information
+            }
+            else {
+                sidePanelEndGame(this.scores);  // show the endgame panel information
+            }
+            this.freezeTimeset = Date.now();  // reset the freeze timer
         }
-        else {
-            sidePanelEndGame(this.scores);  // show the endgame panel information
-        }
-        this.freezeTimeset = Date.now();  // reset the freeze timer
     }
 
     // generates a score from the selected warehouse states
     gradeTest(warehouseSelections) {
         var score = 0;
+        console.log("-----")
         for (var i in warehouseSelections) {
             // if colored grey, ignore
             if (warehouseSelections[i] == 0) {
@@ -95,7 +98,16 @@ class SAGAT {
             score -= 1;  // penalize wrong answers
         }
 
-        if (this.sagatCount != 1) {  // don't record the first one
+        // for the first cycle, check if the warehouses are all green, otherwise write so in the side panel
+        console.log(">>>", this.sagatCount, score, warehouseSelections.length)
+        if (this.sagatCount == 1 && score != warehouseSelections.length) {
+            console.log("messed up the first test .-,", warehouseSelections.length);
+            this.active = true;
+            this.sagatCount -= 1;
+            sidePanelFailedFirstCycle();
+        }
+
+        if (this.sagatCount > 1) {  // don't record the first one
             this.scores.push(score)  // record the score
         }
         
