@@ -44,7 +44,7 @@ function loadAbout() {
 		education_intro.className = "intro-about";
 	    education_intro.innerHTML = "I am a first-year " + blue_color + link_gatech_robotics + "<b>Robotics</b></a></span> PhD student at " + tech_gold_color + link_gatech + "<b>Georgia Tech</b></a></span>, advised by " + majenta_color + link_chernova + "<b>Sonia Chernova</b></a></span>. ";
 		education_intro.innerHTML = education_intro.innerHTML + "My broad interests are in " + green_color + "<b>artificial intelligence</b></span>, " + red_color + "<b>robotics</b></span>, " + blue_color + "<b>entrepreneurship</b></span>, and " + majenta_color + "<b>human-robot interaction</b></span>. ";
-		education_intro.innerHTML = education_intro.innerHTML + "I work in the " + green_color + link_rail + "<b>RAIL Lab</b></a></span>, where I am currently researching how to form human+robot teams to accomplish mission objectives.<br><br>";
+		education_intro.innerHTML = education_intro.innerHTML + "I work in the " + green_color + link_rail + "<b>RAIL Lab</b></a></span>, where I am currently researching how to predict human performance in human+robot teams.<br><br>";
 
 	var undergrad = document.createElement("div");
 		undergrad.className = "org-title";
